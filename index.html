@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <title>portfolio_PORSCHE</title>
+
+    <style>
+      * {
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100vh;
+      }
+      /* .swiper-slide {
+        margin-top: 70px;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="header_wrap">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="로고" />
+          </a>
+        </h1>
+
+        <!-- navigation -->
+        <nav class="menu">
+          <ul class="gnbWeb">
+            <li><a href="model.html">모델</a></li>
+            <li><a href="purchase.html">구매</a></li>
+            <li><a href="experience.html">체험</a></li>
+            <li><a href="service.html">서비스</a></li>
+          </ul>
+          <ul class="joinWeb">
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          slide1
+          <div class="container">
+            <div class="box">
+              <img src="./img/main/drink1.jpg" />
+              <span>911</span>
+            </div>
+            <div class="box">
+              <img src="./img/main/drink2.jpg" />
+              <span>Taycan</span>
+            </div>
+            <div class="box">
+              <img src="./img/main/drink3.jpg" />
+              <span>Panamera</span>
+            </div>
+            <div class="box">
+              <img src="./img/main/drink4.jpg" />
+              <span>Cayenne</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          slide2
+          <section class="test">
+            <div class="back_test">
+              <video src="./img/main/Ã«Â¹Â - 134080.mp4" muted autoplay loop></video>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-slide">
+          slide3
+          <section class="benefit">
+            <div class="benefit_wrap">
+              <div class="row">
+                <h1>구매 혜택</h1>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="wrap">
+                    <h5>혜택 1</h5>
+                    <h3>PORSCHE 케어스</h3>
+                    <div class="box">
+                      <img src="./img/main/drink1.jpg" alt="" />
+                    </div>
+                    <div class="textbox">
+                      <p>포르쉐 구매 고객을 위한<br />카라이프 안심케어 서비스</p>
+                    </div>
+                    <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="wrap">
+                    <h5>혜택 2</h5>
+                    <h3>세제 혜택</h3>
+                    <div class="box">
+                      <img src="./img/main/drink2.jpg" alt="" />
+                    </div>
+                    <div class="textbox">
+                      <p>면세 혜택부터 유지비 할인까지<br />가능한 엔트리 SUV 포르쉐</p>
+                    </div>
+                    <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="wrap">
+                    <h5>혜택 3</h5>
+                    <h3>레드 멤버스 혜택</h3>
+                    <div class="box">
+                      <img src="./img/main/drink3.jpg" alt="" />
+                    </div>
+                    <div class="textbox">
+                      <p>신차 구매 시 포인트 3% 적립,<br />8년간 8회 무상점검까지</p>
+                    </div>
+                    <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="wrap">
+                    <h5>혜택 4</h5>
+                    <h3>고객 서비스 물품</h3>
+                    <div class="box">
+                      <img src="./img/main/drink4.jpg" alt="" />
+                    </div>
+                    <div class="textbox">
+                      <p>썬팅 무료 시공 쿠폰/<br />브랜드 KIT 중 택 1</p>
+                    </div>
+                    <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: false,
+        mousewheel: true,
+        speed: 500,
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+
+    <!-- <section class="test">
+      <div class="back_test">
+        <video src="./video/test_video.mp4" loop muted></video>
+      </div>
+    </section> -->
+
+    <!-- benefit -->
+    <!-- <section class="benefit">
+      <div class="benefit_wrap">
+        <div class="row">
+          <h1>구매 혜택</h1>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="wrap">
+              <h5>혜택 1</h5>
+              <h3>PORSCHE 케어스</h3>
+              <div class="box">
+                <img src="./img/main/drink1.jpg" alt="" />
+              </div>
+              <div class="textbox">
+                <p>포르쉐 구매 고객을 위한<br />카라이프 안심케어 서비스</p>
+              </div>
+              <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="wrap">
+              <h5>혜택 2</h5>
+              <h3>세제 혜택</h3>
+              <div class="box">
+                <img src="./img/main/drink2.jpg" alt="" />
+              </div>
+              <div class="textbox">
+                <p>면세 혜택부터 유지비 할인까지<br />가능한 엔트리 SUV 포르쉐</p>
+              </div>
+              <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="wrap">
+              <h5>혜택 3</h5>
+              <h3>레드 멤버스 혜택</h3>
+              <div class="box">
+                <img src="./img/main/drink3.jpg" alt="" />
+              </div>
+              <div class="textbox">
+                <p>신차 구매 시 포인트 3% 적립,<br />8년간 8회 무상점검까지</p>
+              </div>
+              <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="wrap">
+              <h5>혜택 4</h5>
+              <h3>고객 서비스 물품</h3>
+              <div class="box">
+                <img src="./img/main/drink4.jpg" alt="" />
+              </div>
+              <div class="textbox">
+                <p>썬팅 무료 시공 쿠폰/<br />브랜드 KIT 중 택 1</p>
+              </div>
+              <p><a class="btn btn-outline-dark" href="#" role="button">View details »</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer_wrap">
+        <div class="row">
+          <div class="col-3">
+            <h3>Bulid & Find</h3>
+            <ul>
+              <li>나만의 포르쉐 만들기</li>
+              <li>포르쉐 인증 중고차 찾기</li>
+              <li>포르쉐 센터 찾기</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Online Services</h3>
+            <ul>
+              <li>Porsche Financial Services</li>
+              <li>뉴스레터 구독</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Behind the Scenes</h3>
+            <ul>
+              <li>Passion Motorsports</li>
+              <li>Porsche Experience</li>
+              <li>Porsche Classic</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Porsche Company</h3>
+            <ul>
+              <li>Contact & Information</li>
+              <li>Christophorus - The Porsche Magazine</li>
+            </ul>
+            <div class="sns">
+              <div class="row">
+                <div class="col-4">
+                  <a href="https://www.instagram.com/porsche.korea/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.facebook.com/porsche/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://twitter.com/Porsche/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
