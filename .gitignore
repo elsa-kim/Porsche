@@ -1,4 +1,7 @@
-
+#sass 제외
+#folder
+scss/
+# file
 **/.sass-cache
 **/.sass-cache/*
 **.css.map
