@@ -17,23 +17,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* HEADER */
 #header_sub {
   width: 100%;
