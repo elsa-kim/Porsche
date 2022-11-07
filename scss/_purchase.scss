@@ -1,0 +1,58 @@
+$red: #d5001c;
+$dark: #313639;
+$white: #fff;
+$black: #000;
+$lightGray: #c8cacb;
+$blue: #15577e;
+$darkGray: #505356;
+$gray: #494e51;
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .img_box {
+        width: 40vw;
+        height: 60vh;
+        background-color: #000;
+    }
+    .option {
+        margin: 5rem 0.5rem 4rem;
+        width: 50vw;
+        height: 60vh;
+        .select {
+            .accor {
+                background-color: $lightGray;
+                cursor: pointer;
+                padding: 16px;
+                width: 100%;
+                outline: none;
+                border: none;
+                text-align: left;
+                font-size: 16px;
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: $darkGray;
+                    font-weight: bold;
+                }
+                &:after {
+                    content: "₩002B";
+                    font-weight: bold;
+                    float: right;
+                    margin-left: 5px;
+                }
+            }
+            .panel {
+                padding: 0 16px;
+                background-color: #ffffff;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                border-bottom: 1px solid #eeeeee;
+                .item_list {
+                }
+            }
+        }
+    }
+}
