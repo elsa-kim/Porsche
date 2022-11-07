@@ -8,51 +8,145 @@ $darkGray: #505356;
 $gray: #494e51;
 
 .total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .img_box {
-        width: 40vw;
-        height: 60vh;
-        background-color: #000;
-    }
-    .option {
-        margin: 5rem 0.5rem 4rem;
-        width: 50vw;
-        height: 60vh;
-        .select {
-            .accor {
-                background-color: $lightGray;
-                cursor: pointer;
-                padding: 16px;
-                width: 100%;
-                outline: none;
-                border: none;
-                text-align: left;
-                font-size: 16px;
-                transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .img_box {
+    width: 40vw;
+    height: 60vh;
+    background-color: #000;
+  }
+  .option {
+    margin: 5rem 0.5rem 4rem;
+    width: 50vw;
+    height: 60vh;
+    .select {
+      .accor {
+        background-color: $lightGray;
+        cursor: pointer;
+        padding: 16px;
+        width: 100%;
+        outline: none;
+        border: none;
+        text-align: left;
+        font-size: 16px;
+        transition: 0.4s;
 
-                &:hover {
-                    background-color: $darkGray;
-                    font-weight: bold;
-                }
-                &:after {
-                    content: "₩002B";
-                    font-weight: bold;
-                    float: right;
-                    margin-left: 5px;
-                }
-            }
-            .panel {
-                padding: 0 16px;
-                background-color: #ffffff;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
-                border-bottom: 1px solid #eeeeee;
-                .item_list {
-                }
-            }
+        &:hover {
+          background-color: rgba($color: $dark, $alpha: 0.5);
+          font-weight: bold;
         }
+        &:after {
+          content: "\002B";
+          font-weight: bold;
+          float: right;
+          margin-left: 5px;
+        }
+      }
+      .panel {
+        padding: 0 16px;
+        background-color: rgba($color: $lightGray, $alpha: 0.3);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        border-bottom: 1px solid #eeeeee;
+        .item_list {
+          .color-select {
+            .types {
+            }
+            .color-boxes {
+              display: flex;
+              .box {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                cursor: pointer;
+                &:hover {
+                  box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                }
+              }
+              .color-1 {
+                background-color: $white;
+              }
+              .color-2 {
+                background-color: $black;
+              }
+              .color-3 {
+                background-color: $red;
+              }
+              .color-4 {
+                background-color: yellow;
+              }
+              .color-5 {
+                background-color: whitesmoke;
+              }
+              .color-6 {
+                background-color: rgb(21, 21, 22);
+              }
+              .color-7 {
+                background-color: rgb(65, 65, 65);
+              }
+              .color-8 {
+                background-color: rgb(139, 139, 139);
+              }
+              .color-9 {
+                background-color: rgb(32, 32, 57);
+              }
+              .color-10 {
+                background-color: rgb(39, 48, 37);
+              }
+              .color-11 {
+                background-color: rgb(34, 129, 223);
+              }
+              .color-12 {
+                background-color: rgb(124, 124, 124);
+              }
+              .color-13 {
+                background-color: rgb(162, 14, 39);
+              }
+              .color-14 {
+                background-color: rgb(173, 170, 166);
+              }
+              .color-15 {
+                background-color: rgb(65, 139, 49);
+              }
+              .color-16 {
+                background-color: rgb(217, 216, 216);
+              }
+            }
+          }
+          .wheel-select {
+            .wheel {
+              width: 50px;
+              height: 50px;
+              margin: 5px;
+              cursor: pointer;
+            }
+            .wheel1 {
+            }
+            .wheel2 {
+            }
+            .wheel3 {
+            }
+            .wheel4 {
+            }
+            .wheel5 {
+            }
+            .wheel6 {
+            }
+          }
+        }
+      }
+      .active {
+        background-color: rgba($color: $dark, $alpha: 0.2);
+      }
+      .active:after {
+        content: "\2212";
+      }
+      .active:hover {
+        background-color: rgba($color: $dark, $alpha: 0.5);
+        font-weight: bold;
+      }
     }
+  }
 }
