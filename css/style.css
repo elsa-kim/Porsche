@@ -516,10 +516,12 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 .total .option .select .panel .item_list .color-select .color-boxes .color-16 {
   background-color: rgb(217, 216, 216);
+
 }
 .total .option .select .panel .item_list .wheel-select {
   display: flex;
   flex-wrap: wrap;
+
 }
 .total .option .select .panel .item_list .wheel-select .wheel {
   width: 100px;
@@ -991,40 +993,55 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .swiper .swiper-wrapper .swiper-slide .section1 {
   display: flex;
   width: 100%;
-  height: 90vh;
-  padding: 4% 2%;
-  box-sizing: border-box;
-  margin-top: 55px;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
 }
 .swiper .swiper-wrapper .swiper-slide .section1 .box {
   flex: 1;
   overflow: hidden;
   transition: 0.5s;
-  margin: 0 2%;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
-  line-height: 0;
+
 }
-.swiper .swiper-wrapper .swiper-slide .section1 .box > img {
+.swiper .swiper-wrapper .swiper-slide .section1 .box:hover {
+  flex: 1 1 50%;
+}
+.swiper .swiper-wrapper .swiper-slide .section1 .box:hover .wrap img {
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide .section1 .box:hover .wrap .contents {
+  display: block;
+}
+.swiper .swiper-wrapper .swiper-slide .section1 .box .wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide .section1 .box .wrap img {
   width: 200%;
   height: calc(100% - 15vh);
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;
 }
-.swiper .swiper-wrapper .swiper-slide .section1 .box > span {
+
+.swiper .swiper-wrapper .swiper-slide .section1 .box .wrap > .contents {
+  display: none;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+.swiper .swiper-wrapper .swiper-slide .section1 .box span {
+  background-color: red;
   font-size: 3.8vh;
   display: block;
   text-align: center;
   height: 10vh;
   line-height: 2.6;
+  color: #313639;
 }
-.swiper .swiper-wrapper .swiper-slide .section1 .box:hover {
-  flex: 1 1 50%;
-}
-.swiper .swiper-wrapper .swiper-slide .section1 .box:hover img {
-  width: 100%;
-  height: 100%;
-}
+
 .swiper .swiper-wrapper .swiper-slide .section2 {
   width: 100%;
   height: 100%;
@@ -1041,24 +1058,94 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 .swiper .swiper-wrapper .swiper-slide .section3 {
   width: 100%;
-  height: 100%;
 }
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap {
+  width: 100%;
   text-align: center;
+  padding: 50px 5rem;
+  background-color: rgba(200, 202, 203, 0.3);
 }
-.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-box {
+
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap h2 {
+  font: bold 48px/1 "noto sans";
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap p {
+  margin: 12px 0 50px;
+  font: normal 16px/1 "noto sans";
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box {
+  padding: 40px 30px;
+  background-color: #fff;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
+  content: "면세 혜택부터 유지비 할인까지";
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
+  content: "신차 구매시 3% 적립";
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
+  content: "선팅 시 무료시공 쿠폰";
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box span {
   display: inline-block;
-  margin: 10px;
-  padding: 30px;
-  border-radius: 20px;
-  background-color: rgb(255, 248, 248);
-  border: 1px solid rgb(250, 226, 231);
+  background: #15577e;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
-.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-box .img-box {
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box h3 {
+  color: #15577e;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box .image {
   width: 180px;
   height: 180px;
-  background-color: rgb(250, 226, 231);
-  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box .image:hover img {
+  transform: scale(1.5);
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box .image:hover::after {
+  top: 0;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box .image img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box .image::after {
+  content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(17, 17, 17, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  transition: 0.5s;
+  top: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box a {
+  display: inline-block;
+  margin-top: 20px;
+  color: gray;
+}
+.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box a:hover {
+  color: #313639;
 }
 
 /* FOOTER */
