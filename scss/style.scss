@@ -106,12 +106,14 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
           position: relative;
 
           a {
-            color: $white;
+            color: $dark;
+            transition: 0.2s;
           }
 
           &:hover {
             a {
-              color: $black;
+              color: $red;
+              font-weight: bold;
             }
           }
         }
@@ -119,6 +121,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
     }
   }
 }
+
 /* SECTION */
 .swiper {
   width: 100%;
@@ -151,8 +154,8 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
                 height: 100%;
               }
               .contents {
-                bottom: 3rem;
-                right: 5rem;
+                bottom: 8rem;
+                right: 6rem;
                 opacity: 1;
               }
             }
@@ -162,11 +165,12 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
             height: 100%;
             overflow: hidden;
             position: relative;
+
             img {
               width: 200%;
-              height: calc(100% - 15vh);
+              height: calc(100% - 10vh);
               object-fit: cover;
-              transition: 0.5s;
+              transition: 1s;
             }
             > .contents {
               width: 800px;
@@ -174,21 +178,27 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               color: $white;
               text-align: right;
               position: absolute;
-              bottom: -100px;
+              bottom: 5rem;
               right: -100px;
+              transition: 1.2s;
+              opacity: 0;
 
               h2 {
-                // padding-right: 3rem;
                 font: bold 40px/1 "lato";
+                margin-right: 2rem;
+              }
+              span {
+                font-size: 1.5rem;
               }
             }
             > span {
-              font-size: 3.8vh;
               display: block;
-              text-align: center;
               height: 10vh;
-              line-height: 2.6;
+              text-align: center;
+              line-height: 10vh;
+              font-size: 3.5vh;
               color: $dark;
+              text-shadow: 10px 10px 20px $darkGray;
             }
           }
         }
@@ -217,9 +227,9 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
         .section3-wrap {
           width: 100%;
           text-align: center;
-
-          padding: 50px 5rem;
+          padding: 10rem 5rem;
           background-color: rgba($lightGray, 0.3);
+
           h2 {
             font: bold 48px/1 "noto sans";
           }
@@ -230,33 +240,11 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
           .article-wrap {
             display: flex;
             justify-content: space-between;
-            gap: 20px;
+            gap: 10px;
 
             .article-box {
               padding: 40px 30px;
               background-color: $white;
-
-              &:nth-of-type(2) {
-                .image {
-                  &::after {
-                    content: "면세 혜택부터 유지비 할인까지";
-                  }
-                }
-              }
-              &:nth-of-type(3) {
-                .image {
-                  &::after {
-                    content: "신차 구매시 3% 적립";
-                  }
-                }
-              }
-              &:nth-of-type(4) {
-                .image {
-                  &::after {
-                    content: "선팅 시 무료시공 쿠폰";
-                  }
-                }
-              }
 
               span {
                 display: inline-block;
@@ -274,9 +262,10 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
                 font-weight: bold;
               }
               .image {
-                width: 180px;
-                height: 180px;
+                width: 190px;
+                height: 190px;
                 position: relative;
+                text-align: center;
                 overflow: hidden;
                 &:hover {
                   img {
@@ -314,6 +303,28 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
                 color: gray;
                 &:hover {
                   color: $dark;
+                }
+              }
+
+              &:nth-of-type(2) {
+                .image {
+                  &::after {
+                    content: "면세 혜택부터 유지비 할인까지";
+                  }
+                }
+              }
+              &:nth-of-type(3) {
+                .image {
+                  &::after {
+                    content: "신차 구매시 3% 적립";
+                  }
+                }
+              }
+              &:nth-of-type(4) {
+                .image {
+                  &::after {
+                    content: "선팅 시 무료시공 쿠폰";
+                  }
                 }
               }
             }
