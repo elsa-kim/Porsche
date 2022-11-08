@@ -392,20 +392,40 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   margin: 0.5rem;
 }
 
+.car-purchase {
+  position: absolute;
+  top: 8rem;
+  left: 6rem;
+}
+.car-purchase div {
+  margin-top: 1rem;
+}
+.car-purchase div a {
+  color: #313639;
+  font-weight: 600;
+  font-size: larger;
+  cursor: pointer;
+  z-index: 1;
+}
+.car-purchase div a i {
+  margin-left: 0.5rem;
+}
+
 .total {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .total .img_box {
-  width: 40vw;
+  width: 60vw;
   height: 60vh;
   background-color: #000;
+  margin: 0 1rem;
 }
 .total .option {
-  margin: 5rem 0.5rem 4rem;
-  width: 50vw;
-  height: 60vh;
+  margin: 10rem 0.5rem 4rem;
+  width: 40vw;
+  height: 80vh;
 }
 .total .option .select .accor {
   background-color: #c8cacb;
@@ -438,10 +458,11 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 .total .option .select .panel .item_list .color-select .color-boxes {
   display: flex;
+  flex-wrap: wrap;
 }
 .total .option .select .panel .item_list .color-select .color-boxes .box {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   margin: 5px;
   cursor: pointer;
 }
@@ -495,12 +516,116 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 .total .option .select .panel .item_list .color-select .color-boxes .color-16 {
   background-color: rgb(217, 216, 216);
+
+}
+.total .option .select .panel .item_list .wheel-select {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 .total .option .select .panel .item_list .wheel-select .wheel {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin: 5px;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.total .option .select .panel .item_list .wheel-select .wheel:hover {
+  box-shadow: 0 0 5px rgba(49, 54, 57, 0.5);
+}
+.total .option .select .panel .item_list .wheel-select .wheel1 {
+  background-image: url(/img/model/purchase/wheel1.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel2 {
+  background-image: url(/img/model/purchase/wheel2.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel3 {
+  background-image: url(/img/model/purchase/wheel3.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel4 {
+  background-image: url(/img/model/purchase/wheel4.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel5 {
+  background-image: url(/img/model/purchase/wheel5.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel6 {
+  background-image: url(/img/model/purchase/wheel6.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel7 {
+  background-image: url(/img/model/purchase/wheel7.png);
+}
+.total .option .select .panel .item_list .wheel-select .wheel8 {
+  background-image: url(/img/model/purchase/wheel8.png);
+}
+.total .option .select .panel .item_list .inter-select .color-select {
+  display: flex;
+  flex-wrap: wrap;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  cursor: pointer;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior1 {
+  background-color: #000;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior2 {
+  background-color: #313639;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior3 {
+  display: flex;
+  flex-direction: column;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior3 .black {
+  width: 60px;
+  height: 30px;
+  background-color: #000;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior3 .color-y {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(174, 139, 79);
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior4 {
+  display: flex;
+  flex-direction: column;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior4 .black {
+  width: 60px;
+  height: 30px;
+  background-color: #000;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior4 .color-r {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(68, 22, 27);
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior5 {
+  display: flex;
+  flex-direction: column;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior5 .black {
+  width: 60px;
+  height: 30px;
+  background-color: #000;
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior5 .color-g {
+  width: 60px;
+  height: 30px;
+  background-color: rgb(169, 168, 168);
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior6 {
+  background-color: rgb(48, 57, 68);
+}
+.total .option .select .panel .item_list .inter-select .color-select .interior7 {
+  background-color: rgb(68, 22, 27);
 }
 .total .option .select .active {
   background-color: rgba(49, 54, 57, 0.2);
@@ -511,6 +636,20 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .option .select .active:hover {
   background-color: rgba(49, 54, 57, 0.5);
   font-weight: bold;
+}
+
+.pur-btn {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 3rem;
+  left: 65%;
+}
+.pur-btn button {
+  width: 18vw;
+  height: 7vh;
+  border: none;
+  margin-bottom: 0.5rem;
 }
 
 .experience .content_inner .wrap h1 {
@@ -861,6 +1000,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   flex: 1;
   overflow: hidden;
   transition: 0.5s;
+
 }
 .swiper .swiper-wrapper .swiper-slide .section1 .box:hover {
   flex: 1 1 50%;
@@ -884,6 +1024,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
      object-fit: cover;
   transition: 0.5s;
 }
+
 .swiper .swiper-wrapper .swiper-slide .section1 .box .wrap > .contents {
   display: none;
   color: #fff;
@@ -900,6 +1041,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   line-height: 2.6;
   color: #313639;
 }
+
 .swiper .swiper-wrapper .swiper-slide .section2 {
   width: 100%;
   height: 100%;
@@ -923,6 +1065,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   padding: 50px 5rem;
   background-color: rgba(200, 202, 203, 0.3);
 }
+
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap h2 {
   font: bold 48px/1 "noto sans";
 }
