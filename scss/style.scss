@@ -123,18 +123,97 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
     }
 }
 /* SECTION */
-.test {
+.swiper {
     width: 100%;
     height: 100vh;
-    background: black;
-    .back_test {
+    .swiper-wrapper {
         width: 100%;
         height: 100%;
-        position: relative;
-        video {
+        .swiper-slide {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+
+            // section1
+            .section1 {
+                display: flex;
+                width: 100%;
+                height: 90vh;
+                padding: 4% 2%;
+                box-sizing: border-box;
+                margin-top: 55px;
+
+                .box {
+                    flex: 1;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    margin: 0 2%;
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+                    line-height: 0;
+
+                    > img {
+                        width: 200%;
+                        height: calc(100% - 15vh);
+                        object-fit: cover;
+                        transition: 0.5s;
+                    }
+
+                    > span {
+                        font-size: 3.8vh;
+                        display: block;
+                        text-align: center;
+                        height: 10vh;
+                        line-height: 2.6;
+                    }
+
+                    &:hover {
+                        flex: 1 1 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            // section2
+            .section2 {
+                width: 100%;
+                height: 100%;
+
+                .section2-wrap {
+                    width: 100%;
+                    height: 100%;
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            // section3
+            .section3 {
+                width: 100%;
+                height: 100%;
+                .section3-wrap {
+                    text-align: center;
+
+                    .article-box {
+                        display: inline-block;
+                        margin: 10px;
+                        padding: 30px;
+                        border-radius: 20px;
+                        background-color: rgb(255, 248, 248);
+                        border: 1px solid rgb(250, 226, 231);
+                        .img-box {
+                            width: 180px;
+                            height: 180px;
+                            background-color: rgb(250, 226, 231);
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
