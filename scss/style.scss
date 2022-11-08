@@ -74,7 +74,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
           position: relative;
 
           a {
-            color: $white;
+            color: $dark;
             transition: 0.5;
           }
 
@@ -93,9 +93,6 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
           &:hover {
             &::after {
               width: 110px;
-            }
-            a {
-              color: $black;
             }
           }
         }
@@ -144,7 +141,6 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
           flex: 1;
           overflow: hidden;
           transition: 0.5s;
-          // line-height: 0;
 
           &:hover {
             flex: 1 1 50%;
@@ -155,14 +151,17 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
                 height: 100%;
               }
               .contents {
-                display: block;
+                bottom: 3rem;
+                right: 5rem;
+                opacity: 1;
               }
             }
           }
           .wrap {
-            position: relative;
             width: 100%;
             height: 100%;
+            overflow: hidden;
+            position: relative;
             img {
               width: 200%;
               height: calc(100% - 15vh);
@@ -170,22 +169,27 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               transition: 0.5s;
             }
             > .contents {
-              display: none;
+              width: 800px;
+              display: block;
               color: $white;
+              text-align: right;
               position: absolute;
-              bottom: 20px;
-              right: 10px;
-            }
-          }
+              bottom: -100px;
+              right: -100px;
 
-          span {
-            background-color: red;
-            font-size: 3.8vh;
-            display: block;
-            text-align: center;
-            height: 10vh;
-            line-height: 2.6;
-            color: $dark;
+              h2 {
+                // padding-right: 3rem;
+                font: bold 40px/1 "lato";
+              }
+            }
+            > span {
+              font-size: 3.8vh;
+              display: block;
+              text-align: center;
+              height: 10vh;
+              line-height: 2.6;
+              color: $dark;
+            }
           }
         }
       }
