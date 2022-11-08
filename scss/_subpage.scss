@@ -1,0 +1,174 @@
+// 서브페이지 기본 레이아웃
+/* HEADER */
+#header_sub {
+    width: 100%;
+    height: 70px;
+
+    .header_wrap {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 5rem;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        transform-origin: top;
+        transition: 0.5s;
+
+        .logo {
+            margin: 0;
+            img {
+                width: 40px;
+            }
+        }
+
+        .menu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Noto Sans KR", sans-serif;
+
+            .gnbWeb {
+                display: flex;
+                margin: 0;
+                li {
+                    margin: 0 3rem;
+                    position: relative;
+
+                    a {
+                        color: $black;
+                        transition: 0.5;
+                    }
+
+                    &::after {
+                        display: block;
+                        content: "";
+                        width: 0px;
+                        height: 4px;
+                        background: $red;
+                        position: absolute;
+                        left: -5px;
+                        bottom: -23px;
+                        transition: 0.5s;
+                    }
+
+                    &:hover,
+                    &.on {
+                        &::after {
+                            width: 110px;
+                        }
+                    }
+                }
+            }
+
+            .joinWeb {
+                display: flex;
+                margin: 0;
+                li {
+                    margin: 0 1.5rem;
+                    position: relative;
+
+                    a {
+                        color: $black;
+                        transition: 0.3s;
+                    }
+
+                    &:hover {
+                        a {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* SECTION */
+.content {
+    width: 100%;
+    background: $lightGray;
+    .content_inner {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 5rem;
+        position: relative;
+        margin: 0 auto;
+        .wrap {
+            width: 100%;
+            height: 100%;
+            border: 1px solid red;
+        }
+    }
+}
+
+/* FOOTER */
+#footer_sub {
+    width: 100%;
+    height: 450px;
+    padding: 2rem 5rem 4rem;
+    .footer_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-top: 1px solid $lightGray;
+        padding: 30px 5px;
+
+        .row {
+            width: 100%;
+            height: 100%;
+
+            .col-3 {
+                h3 {
+                    font: bold 20px/1 "Lato";
+                    margin-bottom: 20px;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        font: normal 16px/1 "noto sans";
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .sns {
+                    .row {
+                        margin: 0;
+                        margin-top: 60px;
+                        .col-4 {
+                            width: 50px;
+                            height: 50px;
+                            background: $dark;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.5s;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+
+                            i {
+                                font-size: 20px;
+                                color: white;
+                            }
+
+                            &:hover {
+                                background: $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

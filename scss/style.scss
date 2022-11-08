@@ -1,0 +1,286 @@
+@import "reset";
+@import "subpage";
+@import "model";
+@import "purchase";
+@import "experience";
+@import "service";
+
+// 변수 선언
+// color
+$red: #d5001c;
+$dark: #313639;
+$white: #fff;
+$black: #000;
+$lightGray: #c8cacb;
+$blue: #15577e;
+$darkGray: #505356;
+$gray: #494e51;
+$footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1) 100%);
+
+// font-family
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+KR&display=swap");
+// font-family: 'Lato', sans-serif;
+// font-family: 'Noto Sans KR', sans-serif;
+
+/* HEADER */
+#header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+
+    .header_wrap {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 5rem;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: transparent;
+        transform-origin: top;
+        transition: 0.5s;
+        &:hover {
+            background: $white;
+            .menu {
+                .gnbWeb li a,
+                .joinWeb li a {
+                    color: $black;
+                }
+            }
+        }
+
+        .logo {
+            margin: 0;
+            img {
+                width: 40px;
+            }
+        }
+
+        .menu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Noto Sans KR", sans-serif;
+
+            .gnbWeb {
+                display: flex;
+                margin: 0;
+                li {
+                    margin: 0 3rem;
+                    position: relative;
+
+                    a {
+                        color: $white;
+                        transition: 0.5;
+                    }
+
+                    &::after {
+                        display: block;
+                        content: "";
+                        width: 0px;
+                        height: 4px;
+                        background: $red;
+                        position: absolute;
+                        left: -5px;
+                        bottom: -23px;
+                        transition: 0.5s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            width: 110px;
+                        }
+                        a {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+
+            .joinWeb {
+                display: flex;
+                margin: 0;
+                li {
+                    margin: 0 1.5rem;
+                    position: relative;
+
+                    a {
+                        color: $white;
+                    }
+
+                    &:hover {
+                        a {
+                            color: $black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* SECTION */
+.swiper {
+    width: 100%;
+    height: 100vh;
+    .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+
+            // section1
+            .section1 {
+                display: flex;
+                width: 100%;
+                height: 90vh;
+                padding: 4% 2%;
+                box-sizing: border-box;
+                margin-top: 55px;
+
+                .box {
+                    flex: 1;
+                    overflow: hidden;
+                    transition: 0.5s;
+                    margin: 0 2%;
+                    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+                    line-height: 0;
+
+                    > img {
+                        width: 200%;
+                        height: calc(100% - 15vh);
+                        object-fit: cover;
+                        transition: 0.5s;
+                    }
+
+                    > span {
+                        font-size: 3.8vh;
+                        display: block;
+                        text-align: center;
+                        height: 10vh;
+                        line-height: 2.6;
+                    }
+
+                    &:hover {
+                        flex: 1 1 50%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+
+            // section2
+            .section2 {
+                width: 100%;
+                height: 100%;
+
+                .section2-wrap {
+                    width: 100%;
+                    height: 100%;
+                    video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            // section3
+            .section3 {
+                width: 100%;
+                height: 100%;
+                .section3-wrap {
+                    text-align: center;
+
+                    .article-box {
+                        display: inline-block;
+                        margin: 10px;
+                        padding: 30px;
+                        border-radius: 20px;
+                        background-color: rgb(255, 248, 248);
+                        border: 1px solid rgb(250, 226, 231);
+                        .img-box {
+                            width: 180px;
+                            height: 180px;
+                            background-color: rgb(250, 226, 231);
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: 450px;
+    padding: 2rem 5rem 4rem;
+    .footer_wrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-top: 1px solid $lightGray;
+        padding: 30px 5px;
+
+        .row {
+            width: 100%;
+            height: 100%;
+
+            .col-3 {
+                h3 {
+                    font: bold 20px/1 "Lato";
+                    margin-bottom: 20px;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        font: normal 16px/1 "noto sans";
+                        margin-bottom: 20px;
+                        cursor: pointer;
+                        transition: 0.5s;
+
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                }
+            }
+            &:last-child {
+                .sns {
+                    .row {
+                        margin: 0;
+                        margin-top: 60px;
+                        .col-4 {
+                            width: 50px;
+                            height: 50px;
+                            background: $dark;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.5s;
+                            margin-right: 10px;
+                            margin-bottom: 10px;
+
+                            i {
+                                font-size: 20px;
+                                color: white;
+                            }
+
+                            &:hover {
+                                background: $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
