@@ -1,6 +1,6 @@
 #sass 제외
 #folder
-scss/
+# scss/
 # file
 **/.sass-cache
 **/.sass-cache/*

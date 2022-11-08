@@ -1,0 +1,241 @@
+.service {
+    background: $white;
+    .sub_visual {
+        width: 100%;
+        height: 30vw;
+        position: relative;
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .background-img {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 0 10%;
+                }
+            }
+            .text {
+                position: absolute;
+                top: 6rem;
+                left: 6rem;
+                color: $white;
+                h2 {
+                    font: 500 30px/1 "noto sans";
+                }
+                p {
+                    font: normal 16px/1 "noto sans";
+                }
+            }
+        }
+    }
+    .content_inner {
+        padding: 2rem 5rem 10rem;
+
+        .wrap {
+            border: none;
+            /* 서비스 리스트 */
+            > h3 {
+                font: normal 24px/1 "noto sans";
+                color: $dark;
+
+                &::after {
+                    display: block;
+                    content: "";
+                    width: 80px;
+                    height: 2px;
+                    background: $dark;
+                    margin: 20px 0;
+                }
+            }
+
+            .service_list_nav {
+                padding: 0;
+
+                display: flex;
+                margin-bottom: 1rem;
+
+                > li {
+                    padding: 0.5rem 1rem;
+                    background: rgba($lightGray, 0.3);
+                    font-family: "noto sans";
+                    color: $dark;
+                    letter-spacing: 0.5px;
+                    border: 1px solid $white;
+                    cursor: pointer;
+
+                    &.on {
+                        font-weight: 600;
+                        background: rgba($lightGray, 0.6);
+                        color: $red;
+                    }
+                }
+            }
+            .service_list_contents {
+                margin-bottom: 5rem;
+                article {
+                    display: none;
+                    width: 100%;
+
+                    &.on {
+                        display: block;
+                    }
+                    > .wrap {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 2rem;
+                        .con_text {
+                            width: 60%;
+                            font-family: "noto sans";
+                            color: $dark;
+                            h3 {
+                                font-size: 28px;
+                                margin: 2rem 0;
+                            }
+                            p {
+                                font-size: 16px;
+                                padding-right: 2rem;
+                                line-height: 2;
+                            }
+                        }
+                        .con_img {
+                            width: 40%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .btn_more {
+                        width: 100%;
+                        position: relative;
+
+                        .btn_wrap {
+                            width: 140px;
+                            padding: 0.3rem 0;
+                            text-align: center;
+                            border-top: 1.5px solid $dark;
+                            transform-origin: center;
+                            transition: 0.75s;
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            cursor: pointer;
+                            text-align: center;
+
+                            &.on {
+                                width: 100%;
+                                opacity: 0;
+                            }
+                            span {
+                                letter-spacing: 1px;
+                                i {
+                                    transition: 0.5s;
+                                }
+                            }
+
+                            &:hover {
+                                span i {
+                                    animation: more 1s linear infinite;
+                                }
+                            }
+                        }
+                        .more_contents {
+                            width: 100%;
+                            background: rgba($lightGray, 0.2);
+                            text-align: center;
+                            transition: 1s;
+                            padding: 5rem;
+                            display: none;
+
+                            &.on {
+                                display: block;
+                                height: initial;
+                                visibility: visible;
+                                z-index: 10;
+                            }
+                            i.close {
+                                position: absolute;
+                                top: 1.5rem;
+                                right: 1.5rem;
+                                cursor: pointer;
+                                color: $dark;
+                                &:hover {
+                                    color: $red;
+                                }
+                            }
+                            h4 {
+                                font: 500 24px/1 "noto sans";
+                                text-align: left;
+                                margin-bottom: 2rem;
+                                color: $dark;
+                            }
+                            .wrap {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .text {
+                                    text-align: left;
+                                    padding-right: 3rem;
+                                    h5 {
+                                        font: normal 20px/1 "noto sans";
+                                        margin-bottom: 1rem;
+                                    }
+                                    p {
+                                        font: normal 16px/1.5 "noto sans";
+                                    }
+                                }
+                                img {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* 기타 버튼들 */
+            .etc_btns {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 5rem;
+
+                div {
+                    width: 30%;
+                    height: 100px;
+                    padding: 0 2rem;
+                    background: linear-gradient(to bottom, rgba($lightGray, 0.2), rgba($lightGray, 0.6));
+                    text-align: left;
+                    line-height: 100px;
+                    color: $dark;
+
+                    &:hover {
+                        background: $lightGray;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes more {
+    0% {
+        transform: translateY(-2px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
