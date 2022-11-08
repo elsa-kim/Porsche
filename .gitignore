@@ -1,6 +1,7 @@
 #sass 제외
 #folder
 # scss/
+.vscode/
 # file
 **/.sass-cache
 **/.sass-cache/*
