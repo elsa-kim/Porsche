@@ -411,6 +411,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
                   position: absolute;
                   transition: 0.5s;
                   top: 100%;
+                  // font-size: 20px;
                 }
               }
               a {
@@ -425,21 +426,21 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               &:nth-of-type(2) {
                 .image {
                   &::after {
-                    content: "면세 혜택부터 유지비 할인까지";
+                    content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
                   }
                 }
               }
               &:nth-of-type(3) {
                 .image {
                   &::after {
-                    content: "신차 구매시 3% 적립";
+                    content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
                   }
                 }
               }
               &:nth-of-type(4) {
                 .image {
                   &::after {
-                    content: "선팅 시 무료시공 쿠폰";
+                    content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
                   }
                 }
               }
