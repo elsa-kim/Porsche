@@ -534,6 +534,8 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 
 .car-purchase div {
   margin-top: 1rem;
+  position: relative;
+  z-index: 999999;
 }
 
 .car-purchase div a {
@@ -541,7 +543,6 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   font-weight: 600;
   font-size: larger;
   cursor: pointer;
-  z-index: 1;
 }
 
 .car-purchase div a i {
@@ -563,8 +564,11 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .img_box {
   width: 60vw;
   height: 60vh;
-  background-color: #000;
+  box-shadow: 0 0 2px #505356;
   margin: 0 1rem;
+  background-image: url(/img/model/purchase/color-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .total .option {
@@ -881,6 +885,9 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   height: 7vh;
   border: none;
   margin-bottom: 0.5rem;
+}
+.pur-btn button:hover {
+  background-color: #d5001c;
 }
 
 .experience .content_inner .wrap h1 {

@@ -13,12 +13,13 @@ $gray: #494e51;
   left: 6rem;
   div {
     margin-top: 1rem;
+    position: relative;
+    z-index: 999999;
     a {
       color: $dark;
       font-weight: 600;
       font-size: larger;
       cursor: pointer;
-      z-index: 1;
       i {
         margin-left: 0.5rem;
       }
@@ -32,8 +33,11 @@ $gray: #494e51;
   .img_box {
     width: 60vw;
     height: 60vh;
-    background-color: #000;
+    box-shadow: 0 0 2px $darkGray;
     margin: 0 1rem;
+    background-image: url(/img/model/purchase/color-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .option {
     margin: 10rem 0.5rem 4rem;
@@ -274,5 +278,8 @@ $gray: #494e51;
     height: 7vh;
     border: none;
     margin-bottom: 0.5rem;
+    &:hover {
+      background-color: $red;
+    }
   }
 }
