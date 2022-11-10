@@ -89,7 +89,6 @@ a {
 #header_sub .header_wrap .menu .joinWeb li:hover a {
   color: #d5001c;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop {
   width: 100%;
   height: 100vh;
@@ -101,7 +100,6 @@ a {
   overflow-x: hidden;
   z-index: 10;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login {
   background-color: white;
   padding: 3rem 2rem 2rem 2rem;
@@ -110,54 +108,44 @@ a {
   left: 15rem;
   width: 400px;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap {
   width: 100%;
   position: relative;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap .pic {
   width: 100%;
   position: relative;
   padding: 0 calc(50% - 50px);
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap .pic img {
   width: 100px;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap h1 {
   font: bold 40px/1 "noto sans";
   margin: 3rem 0 2rem;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form label {
   font: normal 14px/1 "noto sans";
 }
-
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"],
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"] {
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=text],
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=password] {
   border: 1px solid #313639;
   width: 200px;
   height: 30px;
   margin-bottom: 10px;
 }
-
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:focus, #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:active,
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:focus,
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:active {
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=text]:focus, #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=text]:active,
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=password]:focus,
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=password]:active {
   outline: double 3px #313639;
 }
-
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="radio"] {
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=radio] {
   margin-bottom: 20px;
   margin-right: 5px;
 }
-
-#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form label[for="personal"] {
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form label[for=personal] {
   margin-right: 10px;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap > a {
   display: inline-block;
   width: 100px;
@@ -167,21 +155,17 @@ a {
   font: normal 16px/40px "arial";
   color: white;
   margin-bottom: 20px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap > a:hover {
   background: #d5001c;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span {
   display: block;
   text-align: center;
   position: relative;
   margin-bottom: 2rem;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span::before {
   content: "";
   display: block;
@@ -191,7 +175,6 @@ a {
   position: absolute;
   top: 50%;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span::after {
   content: "";
   display: block;
@@ -202,17 +185,14 @@ a {
   top: 50%;
   right: 0;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap p {
   font: normal 14px/1 "airal";
   letter-spacing: 1px;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap p a {
   font-size: 14px;
   text-decoration: underline;
 }
-
 #header_sub .header_wrap .menu .joinWeb li .pop .login .btnClose {
   position: absolute;
   top: 1.5rem;
@@ -552,8 +532,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .img_box {
   width: 60vw;
   height: 60vh;
-  -webkit-box-shadow: 0 0 2px #505356;
-          box-shadow: 0 0 2px #505356;
+  box-shadow: 0 0 2px #505356;
   margin: 0 1rem;
   background-image: url(/img/model/purchase/color-1.jpeg);
   background-repeat: no-repeat;
@@ -786,12 +765,11 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   border: none;
   margin-bottom: 0.5rem;
 }
-
 .pur-btn button:hover {
   background-color: #d5001c;
 }
 
-.experience .content_inner .wrap h1 {
+.center .content_inner .wrap h1 {
   font-family: "noto sans";
   background: red;
 }
@@ -1159,9 +1137,9 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   height: 30px;
   margin-bottom: 10px;
 }
-#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:focus, #header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:active,
-#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:focus,
-#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:active {
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=text]:focus, #header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=text]:active,
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=password]:focus,
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=password]:active {
   outline: double 3px #313639;
 }
 #header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type=radio] {
@@ -1180,10 +1158,8 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   font: normal 16px/40px "arial";
   color: white;
   margin-bottom: 20px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 #header .header_wrap .menu .joinWeb li .pop .login .wrap > a:hover {
   background: #d5001c;
 }
@@ -1298,6 +1274,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 #main .section2 {
   width: 100%;
   height: 100vh;
+  background-color: rgba(200, 202, 203, 0.1);
 }
 #main .section2 .section2-wrap {
   width: 100%;
@@ -1361,30 +1338,62 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 #main .section3 {
   width: 100%;
+  padding: 80px;
+  background-color: rgba(200, 202, 203, 0.3);
 }
 #main .section3 .section3-wrap {
   width: 100%;
   text-align: center;
-  padding: 10rem 5rem;
-  background-color: rgba(200, 202, 203, 0.3);
+  padding: auto;
 }
 #main .section3 .section3-wrap h2 {
+  border: 3px solid salmon;
   font: bold 48px/1 "noto sans";
 }
 #main .section3 .section3-wrap p {
-  margin: 12px 0 50px;
+  margin: auto;
+  border: 3px solid salmon;
   font: normal 16px/1 "noto sans";
 }
 #main .section3 .section3-wrap .article-wrap {
+  border: 3px solid salmon;
+  display: flex;
+  justify-content: space-around;
+}
+#main .section3 .section3-wrap .article-wrap .article-box {
+  border: 1px solid red;
+}
+#main .section3 .section3-wrap .article-wrap .article-box span,
+#main .section3 .section3-wrap .article-wrap .article-box > i,
+#main .section3 .section3-wrap .article-wrap .article-box a {
+  display: block;
+}
+#main .section4 {
+  width: 100%;
+  background-color: rgba(200, 202, 203, 0.1);
+}
+#main .section4 .section4-wrap {
+  width: 100%;
+  text-align: center;
+  padding: 10rem 5rem;
+}
+#main .section4 .section4-wrap h2 {
+  font: bold 48px/1 "noto sans";
+}
+#main .section4 .section4-wrap p {
+  margin: 12px 0 50px;
+  font: normal 16px/1 "noto sans";
+}
+#main .section4 .section4-wrap .article-wrap {
   display: flex;
   justify-content: space-between;
   gap: 10px;
 }
-#main .section3 .section3-wrap .article-wrap .article-box {
+#main .section4 .section4-wrap .article-wrap .article-box {
   padding: 40px 30px;
   background-color: #fff;
 }
-#main .section3 .section3-wrap .article-wrap .article-box span {
+#main .section4 .section4-wrap .article-wrap .article-box span {
   display: inline-block;
   background: #15577e;
   padding: 5px 10px;
@@ -1393,32 +1402,32 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   font-size: 14px;
   margin-bottom: 15px;
 }
-#main .section3 .section3-wrap .article-wrap .article-box h3 {
+#main .section4 .section4-wrap .article-wrap .article-box h3 {
   color: #15577e;
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: bold;
 }
-#main .section3 .section3-wrap .article-wrap .article-box .image {
+#main .section4 .section4-wrap .article-wrap .article-box .image {
   width: 190px;
   height: 190px;
   position: relative;
   text-align: center;
   overflow: hidden;
 }
-#main .section3 .section3-wrap .article-wrap .article-box .image:hover img {
+#main .section4 .section4-wrap .article-wrap .article-box .image:hover img {
   transform: scale(1.5);
 }
-#main .section3 .section3-wrap .article-wrap .article-box .image:hover::after {
+#main .section4 .section4-wrap .article-wrap .article-box .image:hover::after {
   top: 0;
 }
-#main .section3 .section3-wrap .article-wrap .article-box .image img {
+#main .section4 .section4-wrap .article-wrap .article-box .image img {
   width: 100%;
   height: 100%;
   overflow: hidden;
   transition: 1s;
 }
-#main .section3 .section3-wrap .article-wrap .article-box .image::after {
+#main .section4 .section4-wrap .article-wrap .article-box .image::after {
   content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
   display: block;
   width: 100%;
@@ -1433,21 +1442,21 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   transition: 0.5s;
   top: 100%;
 }
-#main .section3 .section3-wrap .article-wrap .article-box a {
+#main .section4 .section4-wrap .article-wrap .article-box a {
   display: inline-block;
   margin-top: 20px;
   color: gray;
 }
-#main .section3 .section3-wrap .article-wrap .article-box a:hover {
+#main .section4 .section4-wrap .article-wrap .article-box a:hover {
   color: #313639;
 }
-#main .section3 .section3-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
+#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
   content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
 }
-#main .section3 .section3-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
+#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
   content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
 }
-#main .section3 .section3-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
+#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
   content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
 }
 
