@@ -12,10 +12,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
+    <!-- kakaomap -->
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79c0df25605b0f7facb1369d9be6fe68"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <!-- js -->
     <script defer src="./js/login.js"></script>
+    <script defer src="./js/map.js"></script>
     <title>PORSCHE 센터</title>
 </head>
 
@@ -47,10 +51,23 @@
     <!-- MAIN -->
     <section class="content center">
         <div class="content_inner">
-            <div class="wrap">
-                <h1>체험페이지 입니다</h1>
-                <p>내용을 넣어 주세요</p>
+            <div class="nav_wrap">
+                <h2>Porsche 공식 딜러 위치</h2>
+                <nav class="center_nav">
+                    <ul>
+                        <li class="on"><a href="#">서비스 센터</a></li>
+                        <li><a href="#">전시장</a></li>
+                        <li><a href="#">중고차 전시장</a></li>
+                    </ul>
+                </nav>
             </div>
+            <div class="center_map">
+                <div class="center_list">
+
+                </div>
+                <div id="map"></div>
+            </div>
+
         </div>
     </section>
     <!-- FOOTER -->
