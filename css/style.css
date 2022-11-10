@@ -1297,17 +1297,67 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 }
 #main .section2 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 #main .section2 .section2-wrap {
   width: 100%;
   height: 100%;
+  padding: 100px 5rem;
 }
-#main .section2 .section2-wrap video {
+#main .section2 .section2-wrap .article-wrap {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 5px;
+}
+#main .section2 .section2-wrap .article-wrap article {
+  width: 100%;
+}
+#main .section2 .section2-wrap .article-wrap .box1 .video,
+#main .section2 .section2-wrap .article-wrap .box3 .video {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 5px;
+}
+#main .section2 .section2-wrap .article-wrap .box1 .video video,
+#main .section2 .section2-wrap .article-wrap .box3 .video video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#main .section2 .section2-wrap .article-wrap .box1 .img-box,
+#main .section2 .section2-wrap .article-wrap .box3 .img-box {
+  width: 100%;
+  height: calc(40% - 5px);
+  display: flex;
+  gap: 5px;
+}
+#main .section2 .section2-wrap .article-wrap .box1 .img-box div,
+#main .section2 .section2-wrap .article-wrap .box3 .img-box div {
+  width: 50%;
+  height: 100%;
+}
+#main .section2 .section2-wrap .article-wrap .box1 .img-box div img,
+#main .section2 .section2-wrap .article-wrap .box3 .img-box div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .section2 .section2-wrap .article-wrap .box2 .video {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 5px;
+}
+#main .section2 .section2-wrap .article-wrap .box2 .video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .section2 .section2-wrap .article-wrap .box3 .video {
+  margin-top: 5px;
 }
 #main .section3 {
   width: 100%;
