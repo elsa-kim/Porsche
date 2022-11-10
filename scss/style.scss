@@ -22,6 +22,129 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
 // font-family: 'Lato', sans-serif;
 // font-family: 'Noto Sans KR', sans-serif;
 
+/* LOGIN 팝업창 */
+body {
+  .pop {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url("../img/login_back.jpeg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 5;
+
+    .login {
+      background-color: white;
+      padding: 3rem 2rem 2rem 2rem;
+      position: absolute;
+      top: 0;
+      left: 15rem;
+      width: 400px;
+      .wrap {
+        width: 100%;
+        position: relative;
+
+        .pic {
+          width: 100%;
+          position: relative;
+          padding: 0 calc(50% - 50px);
+          img {
+            width: 100px;
+          }
+        }
+        h1 {
+          font: bold 40px/1 "noto sans";
+          margin: 3rem 0 2rem;
+        }
+        form {
+          label {
+            font: normal 14px/1 "noto sans";
+          }
+          input[type="text"],
+          input[type="password"] {
+            border: 1px solid $dark;
+            width: 200px;
+            height: 30px;
+            margin-bottom: 10px;
+
+            &:focus,
+            &:active {
+              outline: double 3px $dark;
+            }
+          }
+          input[type="radio"] {
+            margin-bottom: 20px;
+            margin-right: 5px;
+          }
+          label[for="personal"] {
+            margin-right: 10px;
+          }
+        }
+        > a {
+          display: inline-block;
+          width: 100px;
+          height: 40px;
+          background: rgba($red, 0.9);
+          text-align: center;
+          font: normal 16px/40px "arial";
+          color: white;
+          margin-bottom: 20px;
+          transition: 0.2s;
+          &:hover {
+            background: rgba($red, 1);
+          }
+        }
+        span {
+          display: block;
+          text-align: center;
+          position: relative;
+          margin-bottom: 2rem;
+
+          &::before {
+            content: "";
+            display: block;
+            width: 140px;
+            height: 1px;
+            background-color: $lightGray;
+            position: absolute;
+            top: 50%;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 140px;
+            height: 1px;
+            background-color: $lightGray;
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+        }
+        p {
+          font: normal 14px/1 "airal";
+          letter-spacing: 1px;
+          a {
+            font-size: 14px;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      // 닫기버튼
+      .btnClose {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        color: #111;
+        cursor: pointer;
+        font-size: 25px;
+      }
+    }
+  }
+}
+
 /* HEADER */
 #header {
   width: 100%;
@@ -116,6 +239,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               font-weight: bold;
             }
           }
+
           .pop {
             width: 100%;
             height: 100vh;
@@ -397,22 +521,22 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
   // section3
   .section3 {
     width: 100%;
-    padding: 80px;
+    padding: 100px 0;
     background-color: rgba($lightGray, 0.3);
 
     .section3-wrap {
-      width: 100%;
+      width: 80%;
       text-align: center;
-      padding: auto;
+      margin: 0 auto;
       h2 {
         font: bold 48px/1 "noto sans";
       }
       p {
         margin: auto;
-        // margin: 12px 0 50px;
         font: normal 16px/1 "noto sans";
       }
       .article-wrap {
+        width: 100%;
         display: flex;
         justify-content: space-around;
 
@@ -461,6 +585,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
         font: normal 16px/1 "noto sans";
       }
       .article-wrap {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 10px;
@@ -494,7 +619,7 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               img {
                 transform: scale(1.5);
               }
-              &::after {
+              .img-hover {
                 top: 0;
               }
             }
@@ -504,21 +629,24 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
               overflow: hidden;
               transition: 1s;
             }
-            &::after {
-              content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
-              display: block;
+            .img-hover {
               width: 100%;
               height: 100%;
-              color: $white;
               background: rgba(#111, 0.3);
+              position: absolute;
+              top: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: 20px;
-              position: absolute;
+              padding: 0 10px;
               transition: 0.5s;
-              top: 100%;
-              // font-size: 20px;
+
+              p {
+                margin: 0;
+                color: white;
+                letter-spacing: 1px;
+                font: normal 15px/1.5 "noto sans";
+              }
             }
           }
           a {
@@ -527,28 +655,6 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
             color: gray;
             &:hover {
               color: $dark;
-            }
-          }
-
-          &:nth-of-type(2) {
-            .image {
-              &::after {
-                content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
-              }
-            }
-          }
-          &:nth-of-type(3) {
-            .image {
-              &::after {
-                content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
-              }
-            }
-          }
-          &:nth-of-type(4) {
-            .image {
-              &::after {
-                content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
-              }
             }
           }
         }
