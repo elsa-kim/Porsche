@@ -1,8 +1,7 @@
 const loginBtn = document.querySelector(".login");
 console.log(loginBtn);
 
-loginBtn.addEventListener("click", e => {
-    e.preventDefault();
+loginBtn.addEventListener("click", () => {
 
     let pop = document.createElement("figure");
 
@@ -50,8 +49,8 @@ loginBtn.addEventListener("click", e => {
     if (pop != null) {
         const close = pop.querySelector(".btnClose");
 
-        if (e.target = close) {
-            e.target.closest("figure").remove();
-        }
+        close.addEventListener("click", () => {
+            pop.remove();
+        })
     }
 })

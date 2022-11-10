@@ -1,424 +1,429 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- fontawsome -->
-    <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <title>PORSCHE 모델</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header id="header_sub">
-      <div class="header_wrap">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="./img/logo.png" alt="로고" />
-          </a>
-        </h1>
-        <!-- navigation -->
-        <nav class="menu">
-          <ul class="gnbWeb">
-            <li class="on"><a href="model.html">모델</a></li>
-            <li><a href="purchase.html">구매</a></li>
-            <li><a href="experience.html">체험</a></li>
-            <li><a href="service.html">서비스</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Js -->
+  <script defer src="./js/login.js"></script>
+  <title>PORSCHE 모델</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header_sub">
+    <div class="header_wrap">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="로고" />
+        </a>
+      </h1>
+      <!-- navigation -->
+      <nav class="menu">
+        <ul class="gnbWeb">
+          <li class="on"><a href="model.html">모델</a></li>
+          <li><a href="purchase.html">구매</a></li>
+          <li><a href="experience.html">체험</a></li>
+          <li><a href="service.html">서비스</a></li>
+        </ul>
+        <ul class="joinWeb">
+          <li class="login"><a href="#">로그인</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <section class="content model">
+    <div class="content_inner">
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>718 series</h3>
+        <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">718 Cayman</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/718_cayman.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="/model2.html">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="/purchase.html">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">718 Boxster</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/718_boxster.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">718 Cayman GT4</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/718_GT4.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>911 series</h3>
+        <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Carrera</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/911_Carrera.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Carrera Cabriolet</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/911_carrera_cabriolet.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Targa</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/911_targa.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">911 Turbo S</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/911_Turbo_S.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">911 GT3</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/911_GT3.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>Taycan series</h3>
+        <span><i class="fa-solid fa-charging-station"></i>전기엔진</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Taycan</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/taycan.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>Panamera series</h3>
+        <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
+        <span><i class="fa-solid fa-battery-half"></i>하이브리드</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Panamera</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/Panamera Turbo S E-Hybrid.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Executive</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/panamera_executive.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>Macan series</h3>
+        <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Macan</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/macan.webp" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="series">
+        <h3><i class="fa-solid fa-caret-right"></i>Cayenne series</h3>
+        <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
+        <span><i class="fa-solid fa-battery-half"></i>하이브리드</span>
+      </div>
+      <div class="card_container row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Cayenne</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/Cayenne.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card_total mb-3" style="max-width: 18rem">
+            <div class="car_name">Coupé</div>
+            <div class="card_body">
+              <div class="car_img h-100">
+                <img class="card-img-top" src="./img/model/Coupé.png" alt="" />
+              </div>
+              <button class="model_btn"><a href="#">자세히 보기</a></button>
+            </div>
+            <div class="card-footer">
+              <div>
+                <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+              <div>
+                <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer id="footer_sub">
+    <div class="footer_wrap">
+      <div class="row">
+        <div class="col-3">
+          <h3>Bulid & Find</h3>
+          <ul>
+            <li>나만의 포르쉐 만들기</li>
+            <li>포르쉐 인증 중고차 찾기</li>
+            <li>포르쉐 센터 찾기</li>
           </ul>
-          <ul class="joinWeb">
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">고객센터</a></li>
+        </div>
+        <div class="col-3">
+          <h3>Online Services</h3>
+          <ul>
+            <li>Porsche Financial Services</li>
+            <li>뉴스레터 구독</li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <!-- MAIN -->
-    <section class="content model">
-      <div class="content_inner">
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>718 series</h3>
-          <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
         </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">718 Cayman</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/718_cayman.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="/model2.html">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="/purchase.html">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">718 Boxster</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/718_boxster.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">718 Cayman GT4</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/718_GT4.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-3">
+          <h3>Behind the Scenes</h3>
+          <ul>
+            <li>Passion Motorsports</li>
+            <li>Porsche Experience</li>
+            <li>Porsche Classic</li>
+          </ul>
         </div>
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>911 series</h3>
-          <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
-        </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Carrera</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/911_Carrera.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
+        <div class="col-3">
+          <h3>Porsche Company</h3>
+          <ul>
+            <li>Contact & Information</li>
+            <li>Christophorus - The Porsche Magazine</li>
+          </ul>
+          <div class="sns">
+            <div class="row">
+              <div class="col-4">
+                <a href="https://www.instagram.com/porsche.korea/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
               </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
+              <div class="col-4">
+                <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Carrera Cabriolet</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/911_carrera_cabriolet.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
+              <div class="col-4">
+                <a href="https://www.facebook.com/porsche/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
               </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
+              <div class="col-4">
+                <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Targa</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/911_targa.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
+              <div class="col-4">
+                <a href="https://twitter.com/Porsche/" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
               </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">911 Turbo S</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/911_Turbo_S.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">911 GT3</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/911_GT3.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>Taycan series</h3>
-          <span><i class="fa-solid fa-charging-station"></i>전기엔진</span>
-        </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Taycan</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/taycan.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>Panamera series</h3>
-          <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
-          <span><i class="fa-solid fa-battery-half"></i>하이브리드</span>
-        </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Panamera</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/Panamera Turbo S E-Hybrid.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Executive</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/panamera_executive.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>Macan series</h3>
-          <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
-        </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Macan</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/macan.webp" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="series">
-          <h3><i class="fa-solid fa-caret-right"></i>Cayenne series</h3>
-          <span><i class="fa-solid fa-gas-pump"></i>휘발유</span>
-          <span><i class="fa-solid fa-battery-half"></i>하이브리드</span>
-        </div>
-        <div class="card_container row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Cayenne</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/Cayenne.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card_total mb-3" style="max-width: 18rem">
-              <div class="car_name">Coupé</div>
-              <div class="card_body">
-                <div class="car_img h-100">
-                  <img class="card-img-top" src="./img/model/Coupé.png" alt="" />
-                </div>
-                <button class="model_btn"><a href="#">자세히 보기</a></button>
-              </div>
-              <div class="card-footer">
-                <div>
-                  <a class="model_a" href="#">견적내기<i class="fa-solid fa-angle-right"></i></a>
-                </div>
-                <div>
-                  <a class="model_a" href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
-                </div>
+              <div class="col-4">
+                <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- FOOTER -->
-    <footer id="footer_sub">
-      <div class="footer_wrap">
-        <div class="row">
-          <div class="col-3">
-            <h3>Bulid & Find</h3>
-            <ul>
-              <li>나만의 포르쉐 만들기</li>
-              <li>포르쉐 인증 중고차 찾기</li>
-              <li>포르쉐 센터 찾기</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Online Services</h3>
-            <ul>
-              <li>Porsche Financial Services</li>
-              <li>뉴스레터 구독</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Behind the Scenes</h3>
-            <ul>
-              <li>Passion Motorsports</li>
-              <li>Porsche Experience</li>
-              <li>Porsche Classic</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Porsche Company</h3>
-            <ul>
-              <li>Contact & Information</li>
-              <li>Christophorus - The Porsche Magazine</li>
-            </ul>
-            <div class="sns">
-              <div class="row">
-                <div class="col-4">
-                  <a href="https://www.instagram.com/porsche.korea/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.facebook.com/porsche/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://twitter.com/Porsche/" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
-                    <i class="fa-brands fa-pinterest-p"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
