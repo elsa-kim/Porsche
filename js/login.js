@@ -1,12 +1,12 @@
+const body = document.querySelector("body");
 const loginBtn = document.querySelector(".login");
-console.log(loginBtn);
 
 loginBtn.addEventListener("click", () => {
 
-    let pop = document.createElement("figure");
+    let loginPop = document.createElement("figure");
 
-    pop.classList.add("pop");
-    pop.innerHTML = `
+    loginPop.classList.add("pop");
+    loginPop.innerHTML = `
         <div class="login">
             <div class="wrap">
                 <div class="pic">
@@ -40,17 +40,17 @@ loginBtn.addEventListener("click", () => {
             <span class="btnClose"><i class="fa-solid fa-xmark"></i></span>
         </div>
     `
-    loginBtn.append(pop);
+    body.append(loginPop);
 })
 
-loginBtn.addEventListener("click", e => {
-    const pop = loginBtn.querySelector("figure");
+loginBtn.addEventListener("click", () => {
+    const popUp = body.querySelector("figure");
 
-    if (pop != null) {
-        const close = pop.querySelector(".btnClose");
+    if (popUp != null) {
+        const close = popUp.querySelector(".btnClose");
 
         close.addEventListener("click", () => {
-            pop.remove();
+            popUp.remove();
         })
     }
 })
