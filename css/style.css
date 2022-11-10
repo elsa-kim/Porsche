@@ -564,7 +564,8 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .img_box {
   width: 60vw;
   height: 60vh;
-  box-shadow: 0 0 2px #505356;
+  -webkit-box-shadow: 0 0 2px #505356;
+          box-shadow: 0 0 2px #505356;
   margin: 0 1rem;
   background-image: url(/img/model/purchase/color-1.jpeg);
   background-repeat: no-repeat;
@@ -886,6 +887,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   border: none;
   margin-bottom: 0.5rem;
 }
+
 .pur-btn button:hover {
   background-color: #d5001c;
 }
@@ -1315,7 +1317,6 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   color: #313639;
   font-size: 16px;
   -webkit-transition: 0.2s;
-
   transition: 0.2s;
 }
 
@@ -1592,7 +1593,6 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-
   gap: 10px;
 }
 
@@ -1675,26 +1675,17 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box a:hover {
   color: #313639;
 }
+
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
   content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
 }
+
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
   content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
 }
+
 .swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
   content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
-}
-
-.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
-  content: "면세 혜택부터 유지비 할인까지";
-}
-
-.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
-  content: "신차 구매시 3% 적립";
-}
-
-.swiper .swiper-wrapper .swiper-slide .section3 .section3-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
-  content: "선팅 시 무료시공 쿠폰";
 }
 
 /* FOOTER */
