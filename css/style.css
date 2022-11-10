@@ -1569,13 +1569,13 @@ body .pop .login .btnClose {
 }
 #main .section3 {
   width: 100%;
-  padding: 80px;
+  padding: 100px 0;
   background-color: rgba(200, 202, 203, 0.3);
 }
 #main .section3 .section3-wrap {
-  width: 100%;
+  width: 80%;
   text-align: center;
-  padding: auto;
+  margin: 0 auto;
 }
 #main .section3 .section3-wrap h2 {
   font: bold 48px/1 "noto sans";
@@ -1585,6 +1585,7 @@ body .pop .login .btnClose {
   font: normal 16px/1 "noto sans";
 }
 #main .section3 .section3-wrap .article-wrap {
+  width: 100%;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -1638,8 +1639,7 @@ body .pop .login .btnClose {
 }
 
 #main .section4 .section4-wrap .article-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 10px;
@@ -1678,8 +1678,7 @@ body .pop .login .btnClose {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
-
-#main .section4 .section4-wrap .article-wrap .article-box .image:hover::after {
+#main .section4 .section4-wrap .article-wrap .article-box .image:hover .img-hover {
   top: 0;
 }
 
@@ -1689,21 +1688,23 @@ body .pop .login .btnClose {
   overflow: hidden;
   transition: 1s;
 }
-
-#main .section4 .section4-wrap .article-wrap .article-box .image::after {
-  content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
-  display: block;
+#main .section4 .section4-wrap .article-wrap .article-box .image .img-hover {
   width: 100%;
   height: 100%;
-  color: #fff;
   background: rgba(17, 17, 17, 0.3);
+  position: absolute;
+  top: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  position: absolute;
+  padding: 0 10px;
   transition: 0.5s;
-  top: 100%;
+}
+#main .section4 .section4-wrap .article-wrap .article-box .image .img-hover p {
+  margin: 0;
+  color: white;
+  letter-spacing: 1px;
+  font: normal 15px/1.5 "noto sans";
 }
 
 #main .section4 .section4-wrap .article-wrap .article-box a {
@@ -1714,18 +1715,6 @@ body .pop .login .btnClose {
 
 #main .section4 .section4-wrap .article-wrap .article-box a:hover {
   color: #313639;
-}
-
-#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(2) .image::after {
-  content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
-}
-
-#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(3) .image::after {
-  content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
-}
-
-#main .section4 .section4-wrap .article-wrap .article-box:nth-of-type(4) .image::after {
-  content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
 }
 
 /* FOOTER */

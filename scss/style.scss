@@ -521,22 +521,22 @@ body {
   // section3
   .section3 {
     width: 100%;
-    padding: 80px;
+    padding: 100px 0;
     background-color: rgba($lightGray, 0.3);
 
     .section3-wrap {
-      width: 100%;
+      width: 80%;
       text-align: center;
-      padding: auto;
+      margin: 0 auto;
       h2 {
         font: bold 48px/1 "noto sans";
       }
       p {
         margin: auto;
-        // margin: 12px 0 50px;
         font: normal 16px/1 "noto sans";
       }
       .article-wrap {
+        width: 100%;
         display: flex;
         justify-content: space-around;
 
@@ -585,6 +585,7 @@ body {
         font: normal 16px/1 "noto sans";
       }
       .article-wrap {
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 10px;
@@ -618,7 +619,7 @@ body {
               img {
                 transform: scale(1.5);
               }
-              &::after {
+              .img-hover {
                 top: 0;
               }
             }
@@ -628,21 +629,24 @@ body {
               overflow: hidden;
               transition: 1s;
             }
-            &::after {
-              content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
-              display: block;
+            .img-hover {
               width: 100%;
               height: 100%;
-              color: $white;
               background: rgba(#111, 0.3);
+              position: absolute;
+              top: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-              padding: 20px;
-              position: absolute;
+              padding: 0 10px;
               transition: 0.5s;
-              top: 100%;
-              // font-size: 20px;
+
+              p {
+                margin: 0;
+                color: white;
+                letter-spacing: 1px;
+                font: normal 15px/1.5 "noto sans";
+              }
             }
           }
           a {
@@ -651,28 +655,6 @@ body {
             color: gray;
             &:hover {
               color: $dark;
-            }
-          }
-
-          &:nth-of-type(2) {
-            .image {
-              &::after {
-                content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
-              }
-            }
-          }
-          &:nth-of-type(3) {
-            .image {
-              &::after {
-                content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
-              }
-            }
-          }
-          &:nth-of-type(4) {
-            .image {
-              &::after {
-                content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
-              }
             }
           }
         }
