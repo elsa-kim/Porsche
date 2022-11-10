@@ -210,17 +210,16 @@
 /* SECTION */
 .content {
     width: 100%;
-    background: $lightGray;
+    background: rgba($lightGray, 0.2);
     .content_inner {
         width: 100%;
         height: 100%;
-        padding: 1rem 5rem;
+        padding: 1.5rem 5rem 2.5rem;
         position: relative;
         margin: 0 auto;
         .wrap {
             width: 100%;
             height: 100%;
-            border: 1px solid red;
         }
     }
 }
