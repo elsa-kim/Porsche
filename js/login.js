@@ -14,7 +14,7 @@ loginBtn.addEventListener("click", e => {
                     <img src="../img/login.jpg" alt="">
                 </div>
                 <h1>반갑습니다.</h1>
-                <form action="">
+                <form>
                     <!-- id -->
                     <label for="id">ID</label><br>
                     <input type="text" name="id" id="id">
@@ -51,7 +51,7 @@ loginBtn.addEventListener("click", e => {
         const close = pop.querySelector(".btnClose");
 
         if (e.target = close) {
-            e.target.closest("figure").remove(".pop");
+            e.target.closest("figure").remove();
         }
     }
 })
