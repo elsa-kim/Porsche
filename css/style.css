@@ -125,6 +125,138 @@ a {
   color: #d5001c;
 }
 
+#header_sub .header_wrap .menu .joinWeb li .pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../img/login_back.jpeg") no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  z-index: 10;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login {
+  background-color: white;
+  padding: 3rem 2rem 2rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  width: 400px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap {
+  width: 100%;
+  position: relative;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap .pic {
+  width: 100%;
+  position: relative;
+  padding: 0 calc(50% - 50px);
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap .pic img {
+  width: 100px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap h1 {
+  font: bold 40px/1 "noto sans";
+  margin: 3rem 0 2rem;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form label {
+  font: normal 14px/1 "noto sans";
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"],
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"] {
+  border: 1px solid #313639;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:focus, #header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:active,
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:focus,
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:active {
+  outline: double 3px #313639;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="radio"] {
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap form label[for="personal"] {
+  margin-right: 10px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap > a {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background: rgba(213, 0, 28, 0.9);
+  text-align: center;
+  font: normal 16px/40px "arial";
+  color: white;
+  margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap > a:hover {
+  background: #d5001c;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span::before {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background-color: #c8cacb;
+  position: absolute;
+  top: 50%;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap span::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 1px;
+  background-color: #c8cacb;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap p {
+  font: normal 14px/1 "airal";
+  letter-spacing: 1px;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .wrap p a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+#header_sub .header_wrap .menu .joinWeb li .pop .login .btnClose {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: #111;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 /* SECTION */
 .content {
   width: 100%;
@@ -535,7 +667,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .car-purchase div {
   margin-top: 1rem;
   position: relative;
-  z-index: 999999;
+  z-index: 9;
 }
 
 .car-purchase div a {
@@ -1378,8 +1510,9 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   margin-bottom: 10px;
 }
 
-#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:focus,
-#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:focus {
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:focus, #header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="text"]:active,
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:focus,
+#header .header_wrap .menu .joinWeb li .pop .login .wrap form input[type="password"]:active {
   outline: double 3px #313639;
 }
 
@@ -1396,11 +1529,17 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   display: inline-block;
   width: 100px;
   height: 40px;
-  background: #d5001c;
+  background: rgba(213, 0, 28, 0.9);
   text-align: center;
   font: normal 16px/40px "arial";
   color: white;
   margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#header .header_wrap .menu .joinWeb li .pop .login .wrap > a:hover {
+  background: #d5001c;
 }
 
 #header .header_wrap .menu .joinWeb li .pop .login .wrap span {
