@@ -26,8 +26,6 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
 #header {
   width: 100%;
   height: 70px;
-  position: fixed;
-  z-index: 10;
 
   .header_wrap {
     width: 100%;
@@ -244,210 +242,200 @@ $footerBack: linear-gradient(180deg, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, 0.1
 }
 
 /* SECTION */
-.swiper {
+#main {
   width: 100%;
-  height: 100vh;
-  .swiper-wrapper {
+
+  // section1
+  .section1 {
+    display: flex;
     width: 100%;
-    height: 100%;
-    .swiper-slide {
-      width: 100%;
-      height: 100%;
+    height: calc(100vh - 70px);
 
-      // section1
-      .section1 {
-        display: flex;
-        width: 100%;
-        height: calc(100vh - 70px);
-        margin-top: 70px;
+    .box {
+      flex: 1;
+      overflow: hidden;
+      transition: 0.5s;
 
-        .box {
-          flex: 1;
-          overflow: hidden;
-          transition: 0.5s;
+      &:hover {
+        flex: 1 1 50%;
 
-          &:hover {
-            flex: 1 1 50%;
-
-            .wrap {
-              img {
-                width: 100%;
-                height: 100%;
-              }
-              .contents {
-                bottom: 8rem;
-                right: 6rem;
-                opacity: 1;
-              }
-            }
-          }
-          .wrap {
+        .wrap {
+          img {
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            position: relative;
-
-            img {
-              width: 200%;
-              height: calc(100% - 10vh);
-              object-fit: cover;
-              transition: 1s;
-            }
-            > .contents {
-              width: 800px;
-              display: block;
-              color: $white;
-              text-align: right;
-              position: absolute;
-              bottom: 5rem;
-              right: -100px;
-              transition: 1.2s;
-              opacity: 0;
-
-              h2 {
-                font: bold 40px/1 "lato";
-                margin-right: 2rem;
-              }
-              span {
-                font-size: 1.5rem;
-              }
-            }
-            > span {
-              display: block;
-              height: 10vh;
-              text-align: center;
-              line-height: 10vh;
-              font-size: 3.5vh;
-              color: $dark;
-              text-shadow: 10px 10px 20px $darkGray;
-            }
+          }
+          .contents {
+            bottom: 8rem;
+            right: 6rem;
+            opacity: 1;
           }
         }
       }
-
-      // section2
-      .section2 {
+      .wrap {
         width: 100%;
         height: 100%;
+        overflow: hidden;
+        position: relative;
 
-        .section2-wrap {
-          width: 100%;
-          height: 100%;
-          video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+        img {
+          width: 200%;
+          height: calc(100% - 10vh);
+          object-fit: cover;
+          transition: 1s;
         }
-      }
-
-      // section3
-      .section3 {
-        width: 100%;
-
-        .section3-wrap {
-          width: 100%;
-          text-align: center;
-          padding: 10rem 5rem;
-          background-color: rgba($lightGray, 0.3);
+        > .contents {
+          width: 800px;
+          display: block;
+          color: $white;
+          text-align: right;
+          position: absolute;
+          bottom: 5rem;
+          right: -100px;
+          transition: 1.2s;
+          opacity: 0;
 
           h2 {
-            font: bold 48px/1 "noto sans";
+            font: bold 40px/1 "lato";
+            margin-right: 2rem;
           }
-          p {
-            margin: 12px 0 50px;
-            font: normal 16px/1 "noto sans";
+          span {
+            font-size: 1.5rem;
           }
-          .article-wrap {
-            display: flex;
-            justify-content: space-between;
-            gap: 10px;
+        }
+        > span {
+          display: block;
+          height: 10vh;
+          text-align: center;
+          line-height: 10vh;
+          font-size: 3.5vh;
+          color: $dark;
+          text-shadow: 10px 10px 20px $darkGray;
+        }
+      }
+    }
+  }
 
-            .article-box {
-              padding: 40px 30px;
-              background-color: $white;
+  // section2
+  .section2 {
+    width: 100%;
+    height: 100%;
 
-              span {
-                display: inline-block;
-                background: $blue;
-                padding: 5px 10px;
-                color: $white;
-                border-radius: 50px;
-                font-size: 14px;
-                margin-bottom: 15px;
-              }
-              h3 {
-                color: $blue;
-                font-size: 20px;
-                margin-bottom: 30px;
-                font-weight: bold;
-              }
-              .image {
-                width: 190px;
-                height: 190px;
-                position: relative;
-                text-align: center;
-                overflow: hidden;
-                &:hover {
-                  img {
-                    transform: scale(1.5);
-                  }
-                  &::after {
-                    top: 0;
-                  }
-                }
-                img {
-                  width: 100%;
-                  height: 100%;
-                  overflow: hidden;
-                  transition: 1s;
-                }
-                &::after {
-                  content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
-                  display: block;
-                  width: 100%;
-                  height: 100%;
-                  color: $white;
-                  background: rgba(#111, 0.3);
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  padding: 20px;
-                  position: absolute;
-                  transition: 0.5s;
-                  top: 100%;
-                  // font-size: 20px;
-                }
-              }
-              a {
-                display: inline-block;
-                margin-top: 20px;
-                color: gray;
-                &:hover {
-                  color: $dark;
-                }
-              }
+    .section2-wrap {
+      width: 100%;
+      height: 100%;
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
 
-              &:nth-of-type(2) {
-                .image {
-                  &::after {
-                    content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
-                  }
-                }
+  // section3
+  .section3 {
+    width: 100%;
+
+    .section3-wrap {
+      width: 100%;
+      text-align: center;
+      padding: 10rem 5rem;
+      background-color: rgba($lightGray, 0.3);
+
+      h2 {
+        font: bold 48px/1 "noto sans";
+      }
+      p {
+        margin: 12px 0 50px;
+        font: normal 16px/1 "noto sans";
+      }
+      .article-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        .article-box {
+          padding: 40px 30px;
+          background-color: $white;
+
+          span {
+            display: inline-block;
+            background: $blue;
+            padding: 5px 10px;
+            color: $white;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 15px;
+          }
+          h3 {
+            color: $blue;
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: bold;
+          }
+          .image {
+            width: 190px;
+            height: 190px;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            &:hover {
+              img {
+                transform: scale(1.5);
               }
-              &:nth-of-type(3) {
-                .image {
-                  &::after {
-                    content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
-                  }
-                }
+              &::after {
+                top: 0;
               }
-              &:nth-of-type(4) {
-                .image {
-                  &::after {
-                    content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
-                  }
-                }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              transition: 1s;
+            }
+            &::after {
+              content: "캐스퍼 구매 고객을 위한 카라이프 안심케어 서비스";
+              display: block;
+              width: 100%;
+              height: 100%;
+              color: $white;
+              background: rgba(#111, 0.3);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 20px;
+              position: absolute;
+              transition: 0.5s;
+              top: 100%;
+              // font-size: 20px;
+            }
+          }
+          a {
+            display: inline-block;
+            margin-top: 20px;
+            color: gray;
+            &:hover {
+              color: $dark;
+            }
+          }
+
+          &:nth-of-type(2) {
+            .image {
+              &::after {
+                content: "면세 혜택부터 유지비 할인까지 가능한 엔트리 SUV PORSCHE";
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            .image {
+              &::after {
+                content: "신차 구매시 포인트 3% 적립, 7년간 7회 무상점검까지";
+              }
+            }
+          }
+          &:nth-of-type(4) {
+            .image {
+              &::after {
+                content: "썬팅 무료 시공 쿠폰/ 브랜드 KIT 중 택 1";
               }
             }
           }
