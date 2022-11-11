@@ -1,188 +1,330 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- js -->
+    <script defer src="./js/login.js"></script>
+    <title>portfolio_PORSCHE</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- bootstrap -->
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- fontawsome -->
-  <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="header_wrap">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="./img/logo.png" alt="로고" />
+          </a>
+        </h1>
 
-  <!-- css -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <script defer src="./js/main_scroll.js"></script>
-  <title>portfolio_PORSCHE</title>
-</head>
+        <!-- navigation -->
+        <nav class="menu">
+          <ul class="gnbWeb">
+            <li><a href="model.html">모델</a></li>
+            <li><a href="purchase.html">구매</a></li>
+            <li><a href="center.html">센터</a></li>
+            <li><a href="service.html">서비스</a></li>
+          </ul>
+          <ul class="joinWeb">
+            <li class="login"><a href="#">로그인</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <!-- HEADER -->
-  <header id="header">
-    <div class="header_wrap">
-      <h1 class="logo">
-        <a href="index.html">
-          <img src="./img/logo.png" alt="로고" />
-        </a>
-      </h1>
-
-      <!-- navigation -->
-      <nav class="menu">
-        <ul class="gnbWeb">
-          <li><a href="model.html">모델</a></li>
-          <li><a href="purchase.html">구매</a></li>
-          <li><a href="experience.html">체험</a></li>
-          <li><a href="service.html">서비스</a></li>
-        </ul>
-        <ul class="joinWeb">
-          <li><a href="#">마이페이지</a></li>
-          <li><a href="#">고객센터</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <section class="swiper">
-    <div class="swiper-wrapper">
-      <!-- slide1 section1 메인비쥬얼-->
-      <div class="swiper-slide">
-        <div class="section1">
-          <div class="box">
-            <img src="./img/main/drink1.jpg" />
+    <!-- MAIN -->
+    <main id="main">
+      <!-- section1 메인 비쥬얼-->
+      <div class="section1">
+        <div class="box">
+          <div class="wrap">
+            <img src="./img/main/main-visual3.jpeg" />
+            <div class="contents">
+              <h2>Timeless Machine.</h2>
+              <span>The 911 Edition 50 Years Porsche Design.</span>
+            </div>
             <span>911</span>
           </div>
-          <div class="box">
-            <img src="./img/main/drink2.jpg" />
+        </div>
+
+        <div class="box">
+          <div class="wrap">
+            <img src="./img/main/main-visual1.jpeg" />
+            <div class="contents">
+              <h2>Soul, electrified.</h2>
+              <span>The Taycan 4S Cross Turismo.</span>
+            </div>
             <span>Taycan</span>
           </div>
-          <div class="box">
-            <img src="./img/main/drink3.jpg" />
-            <span>Panamera</span>
+        </div>
+
+        <div class="box">
+          <div class="wrap">
+            <img src="./img/main/main-visual2.jpeg" />
+            <div class="contents">
+              <h2>Perfectly irrational.</h2>
+              <span>The panamera 4 Platinum Edition.</span>
+            </div>
+            <span>panamera</span>
           </div>
-          <div class="box">
-            <img src="./img/main/drink4.jpg" />
+        </div>
+
+        <div class="box">
+          <div class="wrap">
+            <img src="./img/main/main-visual4.jpeg" />
+            <div class="contents">
+              <h2>Shaped by Performance.</h2>
+              <span>The Cayenne Turbo GT.</span>
+            </div>
             <span>Cayenne</span>
           </div>
         </div>
       </div>
 
-      <!-- slide2 section2 비디오-->
-      <div class="swiper-slide">
-        <div class="section2">
-          <div class="section2-wrap">
-            <video src="./video/main/main_back.mp4" muted autoplay loop></video>
+      <!-- section2 비디오-->
+      <div class="section2">
+        <div class="section2-wrap">
+          <h2>PORSCHE Social</h2>
+          <div class="article-wrap">
+            <article class="box1">
+              <div class="video">
+                <video src="./video/main/porsche.mp4" muted autoplay loop></video>
+              </div>
+              <div class="img-box">
+                <div class="img1">
+                  <img src="./img/main/p1.jpg" alt="" />
+                </div>
+                <div class="img2">
+                  <img src="./img/main/p2.jpg" alt="" />
+                </div>
+              </div>
+            </article>
+            <article class="box2">
+              <div class="video vid1">
+                <video src="./video/main/porsche logo2.mp4" muted autoplay loop></video>
+              </div>
+              <div class="video vid2">
+                <video src="./video/main/porsche service.mp4" muted autoplay loop></video>
+              </div>
+            </article>
+            <article class="box3">
+              <div class="img-box">
+                <div class="img1">
+                  <img src="./img/main/p3.jpg" alt="" />
+                </div>
+                <div class="img2">
+                  <img src="./img/main/p4.jpg" alt="" />
+                </div>
+              </div>
+              <div class="video">
+                <video src="./video/main/porsche logo.mp4" muted autoplay loop></video>
+              </div>
+            </article>
           </div>
         </div>
       </div>
 
-      <!-- slide3 section3 구매혜택 -->
-      <div class="swiper-slide">
-        <div class="section3">
-          <div class="section3-wrap">
+      <!-- section3 구매 안내 -->
+      <div class="section3">
+        <div class="section3-wrap">
+          <h2>PORSCHE 구매 안내</h2>
+          <p>온라인 구매 단계를 쉽게 안내해드립니다.</p>
+          <div class="article-wrap">
+            <div class="article-box">
+              <span>1단계</span>
+              <i class="fa-solid fa-calculator"></i>
+              <a href="#">견적 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="article-box">
+              <span>2단계</span>
+              <i class="fa-solid fa-pen-nib"></i>
+              <a href="#">계약 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="article-box">
+              <span>3단계</span>
+              <i class="fa-solid fa-car"></i>
+              <a href="#">차량 준비 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="article-box">
+              <span>4단계</span>
+              <i class="fa-solid fa-sack-dollar"></i>
+              <a href="#">결제 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="article-box">
+              <span>5단계</span>
+              <i class="fa-solid fa-car-on"></i>
+              <a href="#">인수 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
+            <div class="article-box">
+              <span>6단계</span>
+              <i class="fa-regular fa-id-card"></i>
+              <a href="#">등록 <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section4 구매 혜택 -->
+      <div class="section4">
+        <div class="section4-wrap">
+          <h2>PORSCHE 구매 혜택</h2>
+          <p>다양한 혜택으로 포르쉐를 구매해보세요.</p>
+          <div class="article-wrap">
             <article class="article-box">
-              <img src="./img/main/drink1.jpg" class="img-box" alt="" />
-              <h3>혜택 1</h3>
-              <h4>PORSCHE 케어스</h4>
+              <span>혜택 1</span>
+              <h3>PORSCHE 케어스</h3>
+              <div class="image">
+                <img src="./img/main/main-visual1.jpeg" class="img-box" alt="" />
+                <div class="img-hover">
+                  <p>
+                    캐스퍼 구매 고객을 위한 <br />
+                    카라이프 안심케어 서비스
+                  </p>
+                </div>
+              </div>
+              <a href="#">자세히 보기 <i class="fa-solid fa-chevron-right"></i></a>
             </article>
+
             <article class="article-box">
-              <img src="./img/main/drink2.jpg" class="img-box" alt="" />
-              <h3>혜택 2</h3>
-              <h4>세제 혜택</h4>
+              <span>혜택 2</span>
+              <h3>세제 혜택</h3>
+              <div class="image">
+                <img src="./img/main/main-visual2.jpeg" class="img-box" alt="" />
+                <div class="img-hover">
+                  <p>
+                    면세 혜택부터 <br />
+                    유지비 할인까지 가능한 <br />
+                    엔트리 SUV PORSCHE
+                  </p>
+                </div>
+              </div>
+              <a href="#">자세히 보기 <i class="fa-solid fa-chevron-right"></i></a>
             </article>
+
             <article class="article-box">
-              <img src="./img/main/drink3.jpg" class="img-box" alt="" />
-              <h3>혜택 3</h3>
-              <h4>레드 멤버스 혜택</h4>
+              <span>혜택 3</span>
+              <h3>레드 멤버스 혜택</h3>
+              <div class="image">
+                <img src="./img/main/main-visual3.jpeg" class="img-box" alt="" />
+                <div class="img-hover">
+                  <p>
+                    신차 구매시 <br />
+                    포인트 3% 적립,<br />7년간 7회 무상점검까지
+                  </p>
+                </div>
+              </div>
+              <a href="#">자세히 보기 <i class="fa-solid fa-chevron-right"></i></a>
             </article>
+
             <article class="article-box">
-              <img src="./img/main/drink4.jpg" class="img-box" alt="" />
-              <h3>혜택 4</h3>
-              <h4>고객 서비스 물품</h4>
+              <span>혜택 4</span>
+              <h3>고객 서비스 물품</h3>
+              <div class="image">
+                <img src="./img/main/main-visual4.jpeg" class="img-box" alt="" />
+                <div class="img-hover">
+                  <p>
+                    썬팅 무료 시공 쿠폰/<br />
+                    브랜드 KIT 중 택 1
+                  </p>
+                </div>
+              </div>
+              <a href="#">자세히 보기 <i class="fa-solid fa-chevron-right"></i></a>
             </article>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </main>
 
-  <!-- FOOTER -->
-  <footer id="footer">
-    <div class="footer_wrap">
-      <div class="row">
-        <div class="col-3">
-          <h3>Bulid & Find</h3>
-          <ul>
-            <li>나만의 포르쉐 만들기</li>
-            <li>포르쉐 인증 중고차 찾기</li>
-            <li>포르쉐 센터 찾기</li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <h3>Online Services</h3>
-          <ul>
-            <li>Porsche Financial Services</li>
-            <li>뉴스레터 구독</li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <h3>Behind the Scenes</h3>
-          <ul>
-            <li>Passion Motorsports</li>
-            <li>Porsche Experience</li>
-            <li>Porsche Classic</li>
-          </ul>
-        </div>
-        <div class="col-3">
-          <h3>Porsche Company</h3>
-          <ul>
-            <li>Contact & Information</li>
-            <li>Christophorus - The Porsche Magazine</li>
-          </ul>
-          <div class="sns">
-            <div class="row">
-              <div class="col-4">
-                <a href="https://www.instagram.com/porsche.korea/" target="_blank">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.facebook.com/porsche/" target="_blank">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
-                  <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://twitter.com/Porsche/" target="_blank">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </div>
-              <div class="col-4">
-                <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
-                  <i class="fa-brands fa-pinterest-p"></i>
-                </a>
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="footer_wrap">
+        <div class="row">
+          <div class="col-3">
+            <h3>Bulid & Find</h3>
+            <ul>
+              <li>나만의 포르쉐 만들기</li>
+              <li>포르쉐 인증 중고차 찾기</li>
+              <li>포르쉐 센터 찾기</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Online Services</h3>
+            <ul>
+              <li>Porsche Financial Services</li>
+              <li>뉴스레터 구독</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Behind the Scenes</h3>
+            <ul>
+              <li>Passion Motorsports</li>
+              <li>Porsche Experience</li>
+              <li>Porsche Classic</li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h3>Porsche Company</h3>
+            <ul>
+              <li>Contact & Information</li>
+              <li>Christophorus - The Porsche Magazine</li>
+            </ul>
+            <div class="sns">
+              <div class="row">
+                <div class="col-4">
+                  <a href="https://www.instagram.com/porsche.korea/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.facebook.com/porsche/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://twitter.com/Porsche/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

@@ -82,6 +82,125 @@
                             color: $red;
                         }
                     }
+                    .pop {
+                        width: 100%;
+                        height: 100vh;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        background: url("../img/login_back.jpeg") no-repeat;
+                        background-size: cover;
+                        overflow-x: hidden;
+                        z-index: 10;
+
+                        .login {
+                            background-color: white;
+                            padding: 3rem 2rem 2rem 2rem;
+                            position: absolute;
+                            top: 0;
+                            left: 15rem;
+                            width: 400px;
+                            .wrap {
+                                width: 100%;
+                                position: relative;
+
+                                .pic {
+                                    width: 100%;
+                                    position: relative;
+                                    padding: 0 calc(50% - 50px);
+                                    img {
+                                        width: 100px;
+                                    }
+                                }
+                                h1 {
+                                    font: bold 40px/1 "noto sans";
+                                    margin: 3rem 0 2rem;
+                                }
+                                form {
+                                    label {
+                                        font: normal 14px/1 "noto sans";
+                                    }
+                                    input[type="text"],
+                                    input[type="password"] {
+                                        border: 1px solid $dark;
+                                        width: 200px;
+                                        height: 30px;
+                                        margin-bottom: 10px;
+
+                                        &:focus,
+                                        &:active {
+                                            outline: double 3px $dark;
+                                        }
+                                    }
+                                    input[type="radio"] {
+                                        margin-bottom: 20px;
+                                        margin-right: 5px;
+                                    }
+                                    label[for="personal"] {
+                                        margin-right: 10px;
+                                    }
+                                }
+                                > a {
+                                    display: inline-block;
+                                    width: 100px;
+                                    height: 40px;
+                                    background: rgba($red, 0.9);
+                                    text-align: center;
+                                    font: normal 16px/40px "arial";
+                                    color: white;
+                                    margin-bottom: 20px;
+                                    transition: 0.2s;
+                                    &:hover {
+                                        background: rgba($red, 1);
+                                    }
+                                }
+                                span {
+                                    display: block;
+                                    text-align: center;
+                                    position: relative;
+                                    margin-bottom: 2rem;
+
+                                    &::before {
+                                        content: "";
+                                        display: block;
+                                        width: 140px;
+                                        height: 1px;
+                                        background-color: $lightGray;
+                                        position: absolute;
+                                        top: 50%;
+                                    }
+                                    &::after {
+                                        content: "";
+                                        display: block;
+                                        width: 140px;
+                                        height: 1px;
+                                        background-color: $lightGray;
+                                        position: absolute;
+                                        top: 50%;
+                                        right: 0;
+                                    }
+                                }
+                                p {
+                                    font: normal 14px/1 "airal";
+                                    letter-spacing: 1px;
+                                    a {
+                                        font-size: 14px;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            // 닫기버튼
+                            .btnClose {
+                                position: absolute;
+                                top: 1.5rem;
+                                right: 1.5rem;
+                                color: #111;
+                                cursor: pointer;
+                                font-size: 25px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -91,17 +210,16 @@
 /* SECTION */
 .content {
     width: 100%;
-    background: $lightGray;
+    background: rgba($lightGray, 0.2);
     .content_inner {
         width: 100%;
         height: 100%;
-        padding: 1rem 5rem;
+        padding: 1.5rem 5rem 2.5rem;
         position: relative;
         margin: 0 auto;
         .wrap {
             width: 100%;
             height: 100%;
-            border: 1px solid red;
         }
     }
 }
