@@ -15,15 +15,8 @@ function collapse(element) {
     panel.style.maxHeight = panel.scrollHeight + "px"; // 접혀있는 경우 펼치기
   }
 }
-// $(function (n) {
-//   $(`.color-${n}`).click(function (n) {
-//     $(".img_box").style.backgroundImage = url("/img/model/purchase/color-" + n + ".jpeg");
-//   });
-// });
 
-function changeBg(bimg) {
-  let color_box = document.getElementsByClassName(`color-${bimg}`);
-  let img_box = document.getElementsByClassName("img_box");
-  let img_url = url(`/img/model/purchase/color-${bimg}.jpeg`);
-  img_box.style.backgroundImage = "img_url";
+function bgImg(n) {
+  let img_url = "/img/model/purchase/color-" + n + ".jpeg";
+  document.getElementById("bimg_box").style.backgroundImage = `url(${img_url})`;
 }
