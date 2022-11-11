@@ -555,10 +555,21 @@ body {
           > i {
             margin-top: 20px;
             font-size: 45px;
+            position: relative;
+            &:hover {
+              animation-name: shake;
+              animation-duration: 0.5s;
+              animation-timing-function: ease-in-out;
+              animation-iteration-count: infinite;
+              position: relative;
+
+              cursor: pointer;
+            }
           }
           a {
             margin-top: 20px;
             color: gray;
+
             &:hover {
               color: $dark;
             }
@@ -567,6 +578,7 @@ body {
       }
     }
   }
+
   // section4
   .section4 {
     width: 100%;
@@ -727,5 +739,54 @@ body {
         }
       }
     }
+  }
+}
+
+/* section3 keyframes */
+// @keyframes shake {
+//   0% {
+//     top: 0;
+//     left: 0;
+//   }
+//   25% {
+//     top: 0;
+//     left: 2px;
+//   }
+//   50% {
+//     top: 0;
+//     left: 0;
+//   }
+//   75% {
+//     top: 0;
+//     left: -2px;
+//   }
+//   100% {
+//     top: 0;
+//     left: 0;
+//   }
+// }
+@keyframes shake {
+  16% {
+    transform: translateX(8px);
+  }
+
+  33% {
+    transform: translateY(-6px);
+  }
+
+  49% {
+    transform: translateX(4px);
+  }
+
+  66% {
+    transform: translateY(-2px);
+  }
+
+  83% {
+    transform: translateX(1px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
