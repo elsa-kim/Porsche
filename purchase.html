@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="content_inner total">
-        <div class="img_box"></div>
+        <div class="img_box" id="bimg_box"></div>
         <div class="option">
           <div class="select">
             <button class="accor" onclick="collapse(this)">Exterior Colour</button>
@@ -59,32 +59,34 @@
                 <div class="color-select">
                   <div class="types">Standard Colour</div>
                   <div class="color-boxes">
-                    <div class="color-1 box" title="white"></div>
-                    <div class="color-2 box" title="black"></div>
-                    <div class="color-3 box" title="guards red"></div>
-                    <div class="color-4 box" title="racing yellow"></div>
+                    <div class="color-1 box" title="white" onclick="bgImg(1)">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="color-2 box" title="black" onclick="bgImg(2)"></div>
+                    <div class="color-3 box" title="guards red" onclick="bgImg(3)"></div>
+                    <div class="color-4 box" title="racing yellow" onclick="bgImg(4)"></div>
                   </div>
                 </div>
                 <div class="color-select">
                   <div class="types">Metallic Colour</div>
                   <div class="color-boxes">
-                    <div class="color-5 box" title="carrara white metallic"></div>
-                    <div class="color-6 box" title="jet black metallic"></div>
-                    <div class="color-7 box" title="agate grey metallic"></div>
-                    <div class="color-8 box" title="GT silver metallic"></div>
-                    <div class="color-9 box" title="gentian blue metallic"></div>
-                    <div class="color-10 box" title="aventurine green metallic"></div>
+                    <div class="color-5 box" title="carrara white metallic" onclick="bgImg(5)"></div>
+                    <div class="color-6 box" title="jet black metallic" onclick="bgImg(6)"></div>
+                    <div class="color-7 box" title="agate grey metallic" onclick="bgImg(7)"></div>
+                    <div class="color-8 box" title="GT silver metallic" onclick="bgImg(8)"></div>
+                    <div class="color-9 box" title="gentian blue metallic" onclick="bgImg(9)"></div>
+                    <div class="color-10 box" title="aventurine green metallic" onclick="bgImg(10)"></div>
                   </div>
                 </div>
                 <div class="color-select">
                   <div class="types">Special Colour</div>
                   <div class="color-boxes">
-                    <div class="color-11 box" title="shark blue"></div>
-                    <div class="color-12 box" title="arctic grey"></div>
-                    <div class="color-13 box" title="carmine red"></div>
-                    <div class="color-14 box" title="crayon"></div>
-                    <div class="color-15 box" title="python green"></div>
-                    <div class="color-16 box" title="ice grey metallic"></div>
+                    <div class="color-11 box" title="shark blue" onclick="bgImg(11)"></div>
+                    <div class="color-12 box" title="arctic grey" onclick="bgImg(12)"></div>
+                    <div class="color-13 box" title="carmine red" onclick="bgImg(13)"></div>
+                    <div class="color-14 box" title="crayon" onclick="bgImg(14)"></div>
+                    <div class="color-15 box" title="python green" onclick="bgImg(15)"></div>
+                    <div class="color-16 box" title="ice grey metallic" onclick="bgImg(16)"></div>
                   </div>
                 </div>
               </div>
@@ -95,14 +97,14 @@
             <div class="panel">
               <div class="item_list">
                 <div class="wheel-select">
-                  <div class="wheel1 wheel"></div>
-                  <div class="wheel2 wheel"></div>
-                  <div class="wheel3 wheel"></div>
-                  <div class="wheel4 wheel"></div>
-                  <div class="wheel5 wheel"></div>
-                  <div class="wheel6 wheel"></div>
-                  <div class="wheel7 wheel"></div>
-                  <div class="wheel8 wheel"></div>
+                  <div class="wheel1 wheel" onclick="bgImg(17)"></div>
+                  <div class="wheel2 wheel" onclick="bgImg(18)"></div>
+                  <div class="wheel3 wheel" onclick="bgImg(19)"></div>
+                  <div class="wheel4 wheel" onclick="bgImg(20)"></div>
+                  <div class="wheel5 wheel" onclick="bgImg(21)"></div>
+                  <div class="wheel6 wheel" onclick="bgImg(22)"></div>
+                  <div class="wheel7 wheel" onclick="bgImg(23)"></div>
+                  <div class="wheel8 wheel" onclick="bgImg(24)"></div>
                 </div>
               </div>
             </div>
@@ -114,24 +116,24 @@
                 <div class="inter-select">
                   <div class="types">Seats</div>
                   <div class="color-select">
-                    <div class="interior interior1"></div>
-                    <div class="interior interior2"></div>
+                    <div class="interior interior1" onclick="bgImg(25)"></div>
+                    <div class="interior interior2" onclick="bgImg(26)"></div>
                   </div>
                 </div>
                 <div class="inter-select">
                   <div class="types">Leather package</div>
                   <div class="color-select">
-                    <div class="interior interior1"></div>
-                    <div class="interior interior2"></div>
-                    <div class="interior interior3">
+                    <div class="interior interior1" onclick="bgImg(27)"></div>
+                    <div class="interior interior2" onclick="bgImg(28)"></div>
+                    <div class="interior interior3" onclick="bgImg(29)">
                       <div class="black"></div>
                       <div class="color-y"></div>
                     </div>
-                    <div class="interior interior4">
+                    <div class="interior interior4" onclick="bgImg(30)">
                       <div class="black"></div>
                       <div class="color-r"></div>
                     </div>
-                    <div class="interior interior5">
+                    <div class="interior interior5" onclick="bgImg(31)">
                       <div class="black"></div>
                       <div class="color-g"></div>
                     </div>
@@ -140,19 +142,19 @@
                 <div class="inter-select">
                   <div class="types">Leather Interior / Leather Seats</div>
                   <div class="color-select">
-                    <div class="interior interior1"></div>
-                    <div class="interior interior2"></div>
-                    <div class="interior interior6"></div>
-                    <div class="interior interior7"></div>
-                    <div class="interior interior4">
+                    <div class="interior interior1" onclick="bgImg(32)"></div>
+                    <div class="interior interior2" onclick="bgImg(33)"></div>
+                    <div class="interior interior6" onclick="bgImg(34)"></div>
+                    <div class="interior interior7" onclick="bgImg(35)"></div>
+                    <div class="interior interior4" onclick="bgImg(36)">
                       <div class="black"></div>
                       <div class="color-r"></div>
                     </div>
-                    <div class="interior interior3">
+                    <div class="interior interior3" onclick="bgImg(37)">
                       <div class="black"></div>
                       <div class="color-y"></div>
                     </div>
-                    <div class="interior interior5">
+                    <div class="interior interior5" onclick="bgImg(38)">
                       <div class="black"></div>
                       <div class="color-g"></div>
                     </div>

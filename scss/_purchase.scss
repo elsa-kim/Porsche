@@ -38,6 +38,7 @@ $gray: #494e51;
     background-image: url(/img/model/purchase/color-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
   }
   .option {
     margin: 10rem 0.5rem 4rem;
@@ -87,6 +88,13 @@ $gray: #494e51;
                 cursor: pointer;
                 &:hover {
                   box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                }
+                i {
+                  margin: 0.3rem;
+                  color: $red;
+                  border: 0.1px solid $white;
+                  border-radius: 50%;
+                  // visibility: hidden;
                 }
               }
               .color-1 {
