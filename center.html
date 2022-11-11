@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- bootstrap -->
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -14,12 +15,12 @@
     <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
     <!-- kakaomap -->
     <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79c0df25605b0f7facb1369d9be6fe68"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=79c0df25605b0f7facb1369d9be6fe68&libraries=services"></script>
     <!-- js -->
     <script defer src="./js/login.js"></script>
     <script defer src="./js/map.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>PORSCHE 센터</title>
 </head>
 
@@ -62,10 +63,24 @@
                 </nav>
             </div>
             <div class="center_map">
-                <div class="center_list">
 
+                <div class="map_wrap">
+                    <div id="map"></div>
+
+                    <div id="menu_wrap" class="bg_white">
+                        <div class="option">
+                            <div>
+                                <form onsubmit="searchPlaces(); return false;">
+                                    <input type="text" value="포르쉐 센터" id="keyword" size="20">
+                                    <button type="submit">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                        <hr>
+                        <ul id="placesList"></ul>
+                        <div id="pagination"></div>
+                    </div>
                 </div>
-                <div id="map"></div>
             </div>
 
         </div>
