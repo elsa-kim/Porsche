@@ -595,11 +595,11 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
           flex-direction: column;
   word-wrap: break-word;
   background-clip: border-box;
-  background-color: #c8cacb;
+  background-color: rgba(200, 202, 203, 0.2);
 }
 
 .model .content_inner .card_container .col .card_total:hover {
-  background-color: rgba(80, 83, 86, 0.3);
+  background-color: rgba(80, 83, 86, 0.2);
 }
 
 .model .content_inner .card_container .col .card_total .car_name {
@@ -768,6 +768,7 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .option .select .panel .item_list .color-select .color-boxes .box i {
   margin: 0.3rem;
   color: #d5001c;
+  background-color: #fff;
   border: 0.1px solid #fff;
   border-radius: 50%;
 }
@@ -860,6 +861,14 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
           box-shadow: 0 0 5px rgba(49, 54, 57, 0.5);
 }
 
+.total .option .select .panel .item_list .wheel-select .wheel i {
+  margin: 0.3rem;
+  color: #d5001c;
+  background-color: #fff;
+  border: 0.1px solid #fff;
+  border-radius: 50%;
+}
+
 .total .option .select .panel .item_list .wheel-select .wheel1 {
   background-image: url(/img/model/purchase/wheel1.png);
 }
@@ -910,6 +919,14 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
 .total .option .select .panel .item_list .inter-select .color-select .interior:hover {
   -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.total .option .select .panel .item_list .inter-select .color-select .interior i {
+  margin: 0.3rem;
+  color: #d5001c;
+  background-color: #fff;
+  border: 0.1px solid #fff;
+  border-radius: 50%;
 }
 
 .total .option .select .panel .item_list .inter-select .color-select .interior1 {

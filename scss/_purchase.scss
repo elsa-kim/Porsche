@@ -92,9 +92,9 @@ $gray: #494e51;
                 i {
                   margin: 0.3rem;
                   color: $red;
+                  background-color: $white;
                   border: 0.1px solid $white;
                   border-radius: 50%;
-                  // visibility: hidden;
                 }
               }
               .color-1 {
@@ -162,6 +162,13 @@ $gray: #494e51;
               &:hover {
                 box-shadow: 0 0 5px rgba($color: $dark, $alpha: 0.5);
               }
+              i {
+                margin: 0.3rem;
+                color: $red;
+                background-color: $white;
+                border: 0.1px solid $white;
+                border-radius: 50%;
+              }
             }
             .wheel1 {
               background-image: url(/img/model/purchase/wheel1.png);
@@ -201,6 +208,13 @@ $gray: #494e51;
                 cursor: pointer;
                 &:hover {
                   box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                }
+                i {
+                  margin: 0.3rem;
+                  color: $red;
+                  background-color: $white;
+                  border: 0.1px solid $white;
+                  border-radius: 50%;
                 }
               }
               .interior1 {
