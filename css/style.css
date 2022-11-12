@@ -343,10 +343,10 @@ section .model_body .body_text .text_3 .inner_text3 .text_imp {
   flex-direction: column;
   word-wrap: break-word;
   background-clip: border-box;
-  background-color: #c8cacb;
+  background-color: rgba(200, 202, 203, 0.2);
 }
 .model .content_inner .card_container .col .card_total:hover {
-  background-color: rgba(80, 83, 86, 0.3);
+  background-color: rgba(80, 83, 86, 0.2);
 }
 .model .content_inner .card_container .col .card_total .car_name {
   font-weight: 700;

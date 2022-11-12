@@ -19,4 +19,9 @@ function collapse(element) {
 function bgImg(n) {
   let img_url = "/img/model/purchase/color-" + n + ".jpeg";
   document.getElementById("bimg_box").style.backgroundImage = `url(${img_url})`;
+  let check = document.createElement("i");
+  check.classList.add("fa-solid");
+  check.classList.add("fa-circle-check");
+
+  document.getElementById(`c${n}`).appendChild(check);
 }
