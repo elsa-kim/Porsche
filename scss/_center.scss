@@ -1,0 +1,201 @@
+.center {
+    .content_inner {
+        .nav_wrap {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $lightGray;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            h2 {
+                font: normal 20px/1 "noto sans";
+                margin: 0;
+            }
+            .center_nav {
+                ul {
+                    display: flex;
+                    gap: 30px;
+                    margin: 0;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 1px;
+                        height: 30px;
+                        background: $lightGray;
+                        position: absolute;
+                        top: 0;
+                        left: 15px;
+                    }
+
+                    li {
+                        position: relative;
+                        a {
+                            font: normal 16px/1 "noto sans";
+                            color: $dark;
+                            opacity: 0.7;
+                        }
+
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            background: transparent;
+                            position: absolute;
+                            bottom: -5px;
+                            // transition: 0.2s;
+                        }
+
+                        &:hover,
+                        &.on {
+                            a {
+                                opacity: 1;
+                                font-weight: 600;
+                            }
+
+                            &::after {
+                                background: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .center_map {
+            width: 100%;
+            height: 600px;
+
+            .map_wrap {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                // 안에 모든 요소
+                * {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 14px;
+                    font-family: "Noto Sans KR", sans-serif;
+                }
+                #map {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    overflow: hidden;
+
+                    .infoWindow {
+                        display: block;
+                        padding: 10px;
+                        text-align: center;
+                        z-index: 1;
+                    }
+                }
+
+                #menu_wrap {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 320px;
+                    margin: 5px 0 30px 5px;
+                    padding: 5px;
+                    overflow-y: auto;
+                    z-index: 1;
+                    font-size: 14px;
+
+                    hr {
+                        display: block;
+                        height: 1px;
+                        border: 0;
+                        border-top: 1px solid $dark;
+                        margin: 10px 0;
+                    }
+
+                    .option {
+                        input {
+                            width: 60%;
+                            height: 30px;
+                            padding: 10px;
+                            &:focus {
+                                outline: double;
+                                outline-width: 3px;
+                                outline-color: $lightGray;
+                            }
+                        }
+
+                        button {
+                            margin-left: 5px;
+                            width: 50px;
+                            height: 30px;
+                            color: $white;
+                            background: $dark;
+                            border: none;
+                        }
+                    }
+                }
+
+                // placelist li
+                #placesList {
+                    .item {
+                        position: relative;
+                        overflow: hidden;
+                        cursor: pointer;
+                        min-height: 70px;
+                        background: $white;
+                        margin-bottom: 10px;
+                        box-shadow: 1px 1px 10px #aaa;
+
+                        span {
+                            display: block;
+                            margin-top: 4px;
+                        }
+
+                        &:hover {
+                            border-bottom: 3px solid $red;
+
+                            h5 {
+                                color: $red;
+                            }
+                        }
+
+                        h5,
+                        .info {
+                            font-size: 16px;
+                            color: $dark;
+                        }
+                        .info {
+                            padding: 15px 20px;
+
+                            .jibun {
+                                color: $gray;
+                                font-size: 12px;
+                                padding-left: 26px;
+                                background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png)
+                                    no-repeat;
+                            }
+                            .tel {
+                                color: rgba($red, 0.7);
+                            }
+                        }
+                    }
+                }
+
+                // pagination
+                #pagination {
+                    margin: 10 auto;
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        margin-right: 10px;
+                        color: $gray;
+                    }
+                    .on {
+                        font-weight: bold;
+                        cursor: default;
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}

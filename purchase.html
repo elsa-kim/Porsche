@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- bootstrap -->
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- fontawsome -->
-    <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="/js/purchase.js"></script>
-    <title>PORSCHE 구매</title>
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header id="header_sub">
-      <div class="header_wrap">
-        <h1 class="logo">
-          <a href="index.html">
-            <img src="./img/logo.png" alt="로고" />
-          </a>
-        </h1>
-        <!-- navigation -->
-        <nav class="menu">
-          <ul class="gnbWeb">
-            <li><a href="model.html">모델</a></li>
-            <li class="on"><a href="purchase.html">구매</a></li>
-            <li><a href="experience.html">체험</a></li>
-            <li><a href="service.html">서비스</a></li>
-          </ul>
-          <ul class="joinWeb">
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/3261e27a56.js" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- js -->
+  <script defer src="/js/purchase.js"></script>
+  <script defer src="./js/login.js"></script>
+  <title>PORSCHE 구매</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header id="header_sub">
+    <div class="header_wrap">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="로고" />
+        </a>
+      </h1>
+      <!-- navigation -->
+      <nav class="menu">
+        <ul class="gnbWeb">
+          <li><a href="model.html">모델</a></li>
+          <li class="on"><a href="purchase.html">구매</a></li>
+          <li><a href="center.html">센터</a></li>
+          <li><a href="service.html">서비스</a></li>
+        </ul>
+        <ul class="joinWeb">
+          <li class="login"><a href="#">로그인</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- MAIN -->
+  <section class="content purchase">
+    <div class="car-purchase">
+      <h2>718 Cayman</h2>
+      <div>
+        <a href="/model2.html">자세히 보기<i class="fa-solid fa-angle-right"></i></a>
       </div>
-    </header>
-    <!-- MAIN -->
-    <section class="content purchase">
-      <div class="car-purchase">
-        <h2>718 Cayman</h2>
-        <div>
-          <a href="/model2.html">자세히 보기<i class="fa-solid fa-angle-right"></i></a>
-        </div>
-      </div>
+
       <div class="content_inner total">
         <div class="img_box" id="bimg_box"></div>
         <div class="option">
@@ -63,8 +67,13 @@
                     <div class="color-2 box" title="black" onclick="bgImg(2)" id="c2"></div>
                     <div class="color-3 box" title="guards red" onclick="bgImg(3)" id="c3"></div>
                     <div class="color-4 box" title="racing yellow" onclick="bgImg(4)" id="c4"></div>
+
                   </div>
+                  <div class="color-2 box" title="black" onclick="bgImg(2)"></div>
+                  <div class="color-3 box" title="guards red" onclick="bgImg(3)"></div>
+                  <div class="color-4 box" title="racing yellow" onclick="bgImg(4)"></div>
                 </div>
+
                 <div class="color-select">
                   <div class="types">Metallic Colour</div>
                   <div class="color-boxes">
@@ -86,10 +95,12 @@
                     <div class="color-15 box" title="python green" onclick="bgImg(15)" id="c15"></div>
                     <div class="color-16 box" title="ice grey metallic" onclick="bgImg(16)" id="c16"></div>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
+
           <div class="select">
             <button class="accor" onclick="collapse(this)">Wheels</button>
             <div class="panel">
@@ -156,6 +167,7 @@
                       <div class="black"></div>
                       <div class="color-g"></div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -163,81 +175,84 @@
           </div>
         </div>
       </div>
-      <div class="pur-btn">
-        <button>Calculate monthly payment</button>
-        <button>Show summary</button>
-      </div>
-    </section>
-    <!-- FOOTER -->
-    <footer id="footer_sub">
-      <div class="footer_wrap">
-        <div class="row">
-          <div class="col-3">
-            <h3>Bulid & Find</h3>
-            <ul>
-              <li>나만의 포르쉐 만들기</li>
-              <li>포르쉐 인증 중고차 찾기</li>
-              <li>포르쉐 센터 찾기</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Online Services</h3>
-            <ul>
-              <li>Porsche Financial Services</li>
-              <li>뉴스레터 구독</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Behind the Scenes</h3>
-            <ul>
-              <li>Passion Motorsports</li>
-              <li>Porsche Experience</li>
-              <li>Porsche Classic</li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h3>Porsche Company</h3>
-            <ul>
-              <li>Contact & Information</li>
-              <li>Christophorus - The Porsche Magazine</li>
-            </ul>
-            <div class="sns">
-              <div class="row">
-                <div class="col-4">
-                  <a href="https://www.instagram.com/porsche.korea/" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.facebook.com/porsche/" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://twitter.com/Porsche/" target="_blank">
-                    <i class="fa-brands fa-twitter"></i>
-                  </a>
-                </div>
-                <div class="col-4">
-                  <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
-                    <i class="fa-brands fa-pinterest-p"></i>
-                  </a>
-                </div>
+    </div>
+
+    <div class="pur-btn">
+      <button>Calculate monthly payment</button>
+      <button>Show summary</button>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer id="footer_sub">
+    <div class="footer_wrap">
+      <div class="row">
+        <div class="col-3">
+          <h3>Bulid & Find</h3>
+          <ul>
+            <li>나만의 포르쉐 만들기</li>
+            <li>포르쉐 인증 중고차 찾기</li>
+            <li>포르쉐 센터 찾기</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>Online Services</h3>
+          <ul>
+            <li>Porsche Financial Services</li>
+            <li>뉴스레터 구독</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>Behind the Scenes</h3>
+          <ul>
+            <li>Passion Motorsports</li>
+            <li>Porsche Experience</li>
+            <li>Porsche Classic</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h3>Porsche Company</h3>
+          <ul>
+            <li>Contact & Information</li>
+            <li>Christophorus - The Porsche Magazine</li>
+          </ul>
+          <div class="sns">
+            <div class="row">
+              <div class="col-4">
+                <a href="https://www.instagram.com/porsche.korea/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.youtube.com/channel/UCiEoJpch2-TwbnojJo0_X_Q" target="_blank">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.facebook.com/porsche/" target="_blank">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.linkedin.com/company/porsche-ag/" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://twitter.com/Porsche/" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </div>
+              <div class="col-4">
+                <a href="https://www.pinterest.co.kr/porsche/" target="_blank">
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
