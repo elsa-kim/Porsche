@@ -82,6 +82,13 @@
                     height: 100%;
                     position: relative;
                     overflow: hidden;
+
+                    .infoWindow {
+                        display: block;
+                        padding: 10px;
+                        text-align: center;
+                        z-index: 1;
+                    }
                 }
 
                 #menu_wrap {
@@ -89,11 +96,10 @@
                     top: 0;
                     left: 0;
                     bottom: 0;
-                    width: 400px;
-                    margin: 1rem 0 30px 1rem;
-                    padding: 10px;
-                    overflow-y: scroll;
-                    background: rgba($white, 0.7);
+                    width: 320px;
+                    margin: 5px 0 30px 5px;
+                    padding: 5px;
+                    overflow-y: auto;
                     z-index: 1;
                     font-size: 14px;
 
@@ -122,7 +128,7 @@
                             width: 50px;
                             height: 30px;
                             color: $white;
-                            background: rgba($red, 0.9);
+                            background: $dark;
                             border: none;
                         }
                     }
@@ -132,30 +138,36 @@
                 #placesList {
                     .item {
                         position: relative;
-                        border-bottom: 1px solid $lightGray;
                         overflow: hidden;
                         cursor: pointer;
-                        min-height: 65px;
+                        min-height: 70px;
+                        background: $white;
+                        margin-bottom: 10px;
+                        box-shadow: 1px 1px 10px #aaa;
+
                         span {
                             display: block;
                             margin-top: 4px;
                         }
 
+                        &:hover {
+                            border-bottom: 3px solid $red;
+
+                            h5 {
+                                color: $red;
+                            }
+                        }
+
                         h5,
                         .info {
                             font-size: 16px;
-                            text-overflow: ellipsis;
-                            overflow: hidden;
-                            white-space: nowrap;
                             color: $dark;
                         }
                         .info {
-                            padding: 10px 0 10px 20px;
+                            padding: 15px 20px;
 
-                            .gray {
-                                color: $gray;
-                            }
                             .jibun {
+                                color: $gray;
                                 font-size: 12px;
                                 padding-left: 26px;
                                 background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png)
@@ -164,15 +176,6 @@
                             .tel {
                                 color: rgba($red, 0.7);
                             }
-                        }
-                        .markerbg {
-                            float: left;
-                            position: absolute;
-                            width: 36px;
-                            height: 37px;
-                            margin: 10px 0 0 10px;
-                            background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
-                                no-repeat;
                         }
                     }
                 }
@@ -184,7 +187,7 @@
                     a {
                         display: inline-block;
                         margin-right: 10px;
-                        color: $lightGray;
+                        color: $gray;
                     }
                     .on {
                         font-weight: bold;
