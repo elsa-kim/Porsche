@@ -4,12 +4,13 @@
 // 37.530357, 126.954236
 // 마커를 담을 배열입니다
 var markers = [];
-
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+// 지도를 표시할 div
+var mapContainer = document.getElementById('map'),
     mapOption = {
         center: new kakao.maps.LatLng(37.530357, 126.954236), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
     };
+
 
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption);
@@ -121,7 +122,6 @@ function displayPlaces(places) {
 
 // 검색결과 항목을 Element로 반환하는 함수입니다
 function getListItem(index, places) {
-    console.log(index);
     var el = document.createElement('li'),
         itemStr =
             '<div class="info">' +
@@ -129,7 +129,7 @@ function getListItem(index, places) {
 
     if (places.road_address_name) {
         itemStr += '    <span>' + places.road_address_name + '</span>' +
-            '   <span class="jibun gray">' + places.address_name + '</span>';
+            '   <span class="jibun">' + places.address_name + '</span>';
     } else {
         itemStr += '    <span>' + places.address_name + '</span>';
     }
@@ -143,16 +143,12 @@ function getListItem(index, places) {
     return el;
 }
 
+
 // 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
 function addMarker(position, idx, title) {
-    var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
-        imageSize = new kakao.maps.Size(36, 37),  // 마커 이미지의 크기
-        imgOptions = {
-            spriteSize: new kakao.maps.Size(36, 691), // 스프라이트 이미지의 크기
-            spriteOrigin: new kakao.maps.Point(0, (idx * 46) + 10), // 스프라이트 이미지 중 사용할 영역의 좌상단 좌표
-            offset: new kakao.maps.Point(13, 37) // 마커 좌표에 일치시킬 이미지 내에서의 좌표
-        },
-        markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imgOptions),
+    var imageSrc = './img/map_marker.png', // 마커 이미지 url, 스프라이트 이미지를 씁니다
+        imageSize = new kakao.maps.Size(80, 85),  // 마커 이미지의 크기
+        markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize),
         marker = new kakao.maps.Marker({
             position: position, // 마커의 위치
             image: markerImage
@@ -161,8 +157,17 @@ function addMarker(position, idx, title) {
     marker.setMap(map); // 지도 위에 마커를 표출합니다
     markers.push(marker);  // 배열에 생성된 마커를 추가합니다
 
+
     return marker;
 }
+
+// function relayout() {
+
+//     // 지도를 표시하는 div 크기를 변경한 이후 지도가 정상적으로 표출되지 않을 수도 있습니다
+//     // 크기를 변경한 이후에는 반드시  map.relayout 함수를 호출해야 합니다 
+//     // window의 resize 이벤트에 의한 크기변경은 map.relayout 함수가 자동으로 호출됩니다
+//     map.relayout();
+// }
 
 // 지도 위에 표시되고 있는 마커를 모두 제거합니다
 function removeMarker() {
@@ -206,10 +211,12 @@ function displayPagination(pagination) {
 // 검색결과 목록 또는 마커를 클릭했을 때 호출되는 함수입니다
 // 인포윈도우에 장소명을 표시합니다
 function displayInfowindow(marker, title) {
-    var content = '<div style="padding:5px;z-index:1;">' + title + '</div>';
+    var content = '<div class ="infoWindow"">' + title + '</div>';
 
     infowindow.setContent(content);
     infowindow.open(map, marker);
+    // 마커나 지도 선택 시 가운데 정렬
+    var markerPosition = marker.getPosition(); map.relayout(); map.setCenter(markerPosition);
 }
 
 // 검색결과 목록의 자식 Element를 제거하는 함수입니다
