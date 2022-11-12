@@ -528,6 +528,11 @@ body {
       width: 80%;
       text-align: center;
       margin: 0 auto;
+      // animation: fade-up;
+      // animation-duration: 2s;
+      // animation-timing-function: ease-in;
+      // animation-iteration-count: infinite;
+      position: relative;
       h2 {
         font: bold 48px/1 "noto sans";
       }
@@ -551,11 +556,13 @@ body {
             margin-top: 20px;
             font-size: 20px;
             font-weight: bold;
+            // color: #8b0000;
           }
           > i {
             margin-top: 20px;
             font-size: 45px;
             position: relative;
+            // color: #8b0000;
             &:hover {
               animation-name: shake;
               animation-duration: 0.5s;
@@ -605,18 +612,22 @@ body {
         .article-box {
           padding: 40px 30px;
           background-color: $white;
+          // background-color: #e2b559;
 
           span {
             display: inline-block;
-            background: $blue;
+            background: #8b0000;
+            // background: $blue;
             padding: 5px 10px;
             color: $white;
             border-radius: 50px;
             font-size: 14px;
+            // font-weight: bold;
             margin-bottom: 15px;
           }
           h3 {
-            color: $blue;
+            color: #8b0000;
+            // color: $blue;
             font-size: 20px;
             margin-bottom: 30px;
             font-weight: bold;
@@ -743,28 +754,6 @@ body {
 }
 
 /* section3 keyframes */
-// @keyframes shake {
-//   0% {
-//     top: 0;
-//     left: 0;
-//   }
-//   25% {
-//     top: 0;
-//     left: 2px;
-//   }
-//   50% {
-//     top: 0;
-//     left: 0;
-//   }
-//   75% {
-//     top: 0;
-//     left: -2px;
-//   }
-//   100% {
-//     top: 0;
-//     left: 0;
-//   }
-// }
 @keyframes shake {
   16% {
     transform: translateX(8px);
@@ -790,3 +779,14 @@ body {
     transform: translateY(0);
   }
 }
+
+// @keyframes fade-up {
+//   0% {
+//     transform: translateY(50px);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateY(0);
+//     opacity: 1;
+//   }
+// }

@@ -2135,6 +2135,7 @@ body .pop .login .btnClose {
   width: 80%;
   text-align: center;
   margin: 0 auto;
+  position: relative;
 }
 
 #main .section3 .section3-wrap h2 {
@@ -2237,7 +2238,7 @@ body .pop .login .btnClose {
 
 #main .section4 .section4-wrap .article-wrap .article-box span {
   display: inline-block;
-  background: #15577e;
+  background: #8b0000;
   padding: 5px 10px;
   color: #fff;
   border-radius: 50px;
@@ -2246,7 +2247,7 @@ body .pop .login .btnClose {
 }
 
 #main .section4 .section4-wrap .article-wrap .article-box h3 {
-  color: #15577e;
+  color: #8b0000;
   font-size: 20px;
   margin-bottom: 30px;
   font-weight: bold;
