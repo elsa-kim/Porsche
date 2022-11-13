@@ -16,18 +16,25 @@ function collapse(element) {
   }
 }
 
-function bgImg(n) {
-  let img_url = "/img/model/purchase/color-" + n + ".jpeg";
+function bgImg(idx, className) {
+  let img_url = "/img/model/purchase/color-" + idx + ".jpeg";
   document.getElementById("bimg_box").style.backgroundImage = `url(${img_url})`;
+
+  let view = document.getElementById(`c${idx}`);
+  let noview = document.getElementsByClassName(className);
+
+  for (let item of noview) {
+    if (item.children.length) {
+      for (let child of item.children) {
+        if (child.tagName.toLowerCase() === "i") item.removeChild(child);
+      }
+    }
+  }
 
   let check = document.createElement("i");
 
   check.classList.add("fa-solid");
   check.classList.add("fa-circle-check");
-  let view = document.getElementById(`c${n}`);
-  let noview = document.getElementsByClassName("box")[0];
-  if (noview.length != 0) {
-    noview.removeChild();
-  }
+
   view.appendChild(check);
 }
