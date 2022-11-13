@@ -781,10 +781,15 @@ body {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  width: 4rem;
-  height: 4rem;
+  width: 5vw;
+  height: 5vw;
   background: #15577e;
   color: white;
-  line-height: 4rem;
+  line-height: 5vw;
   text-align: center;
+  opacity: 0;
+  border-radius: 50%;
+  &.on {
+    opacity: 1;
+  }
 }
