@@ -2497,4 +2497,16 @@ body .pop .login .btnClose {
             transform: translateY(0);
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.moveTopBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: #15577e;
+  color: white;
+  line-height: 4rem;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
+

@@ -3,3 +3,8 @@ AOS.init({
   once: false,
   easing: "ease-in-out-sine",
 });
+
+const TopBtn = document.querySelector(".moveTopBtn");
+TopBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
