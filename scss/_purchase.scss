@@ -7,214 +7,169 @@ $blue: #15577e;
 $darkGray: #505356;
 $gray: #494e51;
 
-.car-purchase {
-  position: absolute;
-  top: 8rem;
-  left: 6rem;
-  div {
-    margin-top: 1rem;
-    position: relative;
-    z-index: 9;
+.total {
+  .car-purchase {
+    border-bottom: 1px solid $lightGray;
+    h2 {
+      text-shadow: 2px 2px 2px $lightGray;
+    }
+    div {
+      margin: 1rem 0;
+      position: relative;
+      z-index: 9;
 
-    a {
-      color: $dark;
-      font-weight: 600;
-      font-size: larger;
-      cursor: pointer;
-      z-index: 10;
-      &:hover {
-        font-weight: 800;
-      }
+      a {
+        color: $dark;
+        font-weight: 600;
+        font-size: larger;
+        cursor: pointer;
+        z-index: 10;
+        &:hover {
+          font-weight: 800;
+        }
 
-      i {
-        margin-left: 0.5rem;
+        i {
+          margin-left: 0.5rem;
+        }
       }
     }
   }
-}
-.total {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .img_box {
-    flex: 5;
-    height: 60vh;
-    box-shadow: 0 0 2px $darkGray;
-    background-image: url(/img/model/purchase/color-1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    transition: 0.2s;
-  }
-  .option {
-    flex: 3;
-    margin: 8rem 1rem 4rem;
-    width: 40vw;
-    height: 80vh;
-    .select {
-      .accor {
-        background-color: $lightGray;
-        cursor: pointer;
-        padding: 16px;
-        width: 100%;
-        outline: none;
-        border: none;
-        text-align: left;
-        font-size: 16px;
-        transition: 0.4s;
+  .option-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    .img_box {
+      flex: 5;
+      height: 60vh;
+      box-shadow: 0 0 2px $darkGray;
+      background-image: url(/img/model/purchase/color-1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      transition: 0.2s;
+    }
+    .option {
+      flex: 3;
+      margin: 0 0.5rem;
+      width: 40vw;
+      .select {
+        .accor {
+          background-color: $lightGray;
+          cursor: pointer;
+          padding: 16px;
+          width: 100%;
+          outline: none;
+          border: none;
+          text-align: left;
+          font-size: 16px;
+          transition: 0.4s;
 
-        &:hover {
-          background-color: rgba($color: $dark, $alpha: 0.5);
-          font-weight: bold;
-        }
-        &:after {
-          content: "\002B";
-          font-weight: bold;
-          float: right;
-          margin-left: 5px;
-        }
-      }
-      .panel {
-        padding: 0 16px;
-        background-color: rgba($color: $lightGray, $alpha: 0.3);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        border-bottom: 1px solid #eeeeee;
-        .item_list {
-          .color-select {
-            .types {
-            }
-            .color-boxes {
-              display: flex;
-              flex-wrap: wrap;
-              .box {
-                width: 60px;
-                height: 60px;
-                margin: 5px;
-                cursor: pointer;
-                &:hover {
-                  box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
-                }
-                i {
-                  margin: 0.3rem;
-                  color: $red;
-                  background-color: $white;
-                  border: 0.1px solid $white;
-                  border-radius: 50%;
-                }
-              }
-              .color-1 {
-                background-color: $white;
-              }
-              .color-2 {
-                background-color: $black;
-              }
-              .color-3 {
-                background-color: $red;
-              }
-              .color-4 {
-                background-color: yellow;
-              }
-              .color-5 {
-                background-color: whitesmoke;
-              }
-              .color-6 {
-                background-color: rgb(21, 21, 22);
-              }
-              .color-7 {
-                background-color: rgb(65, 65, 65);
-              }
-              .color-8 {
-                background-color: rgb(139, 139, 139);
-              }
-              .color-9 {
-                background-color: rgb(32, 32, 57);
-              }
-              .color-10 {
-                background-color: rgb(39, 48, 37);
-              }
-              .color-11 {
-                background-color: rgb(34, 129, 223);
-              }
-              .color-12 {
-                background-color: rgb(124, 124, 124);
-              }
-              .color-13 {
-                background-color: rgb(162, 14, 39);
-              }
-              .color-14 {
-                background-color: rgb(173, 170, 166);
-              }
-              .color-15 {
-                background-color: rgb(65, 139, 49);
-              }
-              .color-16 {
-                background-color: rgb(217, 216, 216);
-              }
-            }
+          &:hover {
+            background-color: rgba($color: $dark, $alpha: 0.5);
+            font-weight: bold;
           }
-          .wheel-select {
-            display: flex;
-            flex-wrap: wrap;
-            .wheel {
-              width: 100px;
-              height: 100px;
-              margin: 5px;
-              cursor: pointer;
-              background-repeat: no-repeat;
-              background-size: cover;
-              background-position: center;
-              border-radius: 50%;
-              &:hover {
-                box-shadow: 0 0 5px rgba($color: $dark, $alpha: 0.5);
-              }
-              i {
-                margin: 0.3rem;
-                color: $red;
-                background-color: $white;
-                border: 0.1px solid $white;
-                border-radius: 50%;
-              }
-            }
-            .wheel1 {
-              background-image: url(/img/model/purchase/wheel1.png);
-            }
-            .wheel2 {
-              background-image: url(/img/model/purchase/wheel2.png);
-            }
-            .wheel3 {
-              background-image: url(/img/model/purchase/wheel3.png);
-            }
-            .wheel4 {
-              background-image: url(/img/model/purchase/wheel4.png);
-            }
-            .wheel5 {
-              background-image: url(/img/model/purchase/wheel5.png);
-            }
-            .wheel6 {
-              background-image: url(/img/model/purchase/wheel6.png);
-            }
-            .wheel7 {
-              background-image: url(/img/model/purchase/wheel7.png);
-            }
-            .wheel8 {
-              background-image: url(/img/model/purchase/wheel8.png);
-            }
+          &:after {
+            content: "\002B";
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
           }
-          .inter-select {
-            .types {
-            }
+        }
+        .panel {
+          padding: 0 16px;
+          background-color: rgba($color: $lightGray, $alpha: 0.3);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+          border-bottom: 1px solid #eeeeee;
+          .item_list {
             .color-select {
+              .types {
+              }
+              .color-boxes {
+                display: flex;
+                flex-wrap: wrap;
+                .box {
+                  width: 60px;
+                  height: 60px;
+                  margin: 5px;
+                  cursor: pointer;
+                  &:hover {
+                    box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                  }
+                  i {
+                    margin: 0.3rem;
+                    color: $red;
+                    background-color: $white;
+                    border: 0.1px solid $white;
+                    border-radius: 50%;
+                  }
+                }
+                .color-1 {
+                  background-color: $white;
+                }
+                .color-2 {
+                  background-color: $black;
+                }
+                .color-3 {
+                  background-color: $red;
+                }
+                .color-4 {
+                  background-color: yellow;
+                }
+                .color-5 {
+                  background-color: whitesmoke;
+                }
+                .color-6 {
+                  background-color: rgb(21, 21, 22);
+                }
+                .color-7 {
+                  background-color: rgb(65, 65, 65);
+                }
+                .color-8 {
+                  background-color: rgb(139, 139, 139);
+                }
+                .color-9 {
+                  background-color: rgb(32, 32, 57);
+                }
+                .color-10 {
+                  background-color: rgb(39, 48, 37);
+                }
+                .color-11 {
+                  background-color: rgb(34, 129, 223);
+                }
+                .color-12 {
+                  background-color: rgb(124, 124, 124);
+                }
+                .color-13 {
+                  background-color: rgb(162, 14, 39);
+                }
+                .color-14 {
+                  background-color: rgb(173, 170, 166);
+                }
+                .color-15 {
+                  background-color: rgb(65, 139, 49);
+                }
+                .color-16 {
+                  background-color: rgb(217, 216, 216);
+                }
+              }
+            }
+            .wheel-select {
               display: flex;
               flex-wrap: wrap;
-              .interior {
-                width: 60px;
-                height: 60px;
+              .wheel {
+                width: 100px;
+                height: 100px;
                 margin: 5px;
                 cursor: pointer;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 50%;
                 &:hover {
-                  box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                  box-shadow: 0 0 5px rgba($color: $dark, $alpha: 0.5);
                 }
                 i {
                   margin: 0.3rem;
@@ -224,93 +179,140 @@ $gray: #494e51;
                   border-radius: 50%;
                 }
               }
-              .interior1 {
-                background-color: $black;
+              .wheel1 {
+                background-image: url(/img/model/purchase/wheel1.png);
               }
-              .interior2 {
-                background-color: $dark;
+              .wheel2 {
+                background-image: url(/img/model/purchase/wheel2.png);
               }
-              .interior3 {
+              .wheel3 {
+                background-image: url(/img/model/purchase/wheel3.png);
+              }
+              .wheel4 {
+                background-image: url(/img/model/purchase/wheel4.png);
+              }
+              .wheel5 {
+                background-image: url(/img/model/purchase/wheel5.png);
+              }
+              .wheel6 {
+                background-image: url(/img/model/purchase/wheel6.png);
+              }
+              .wheel7 {
+                background-image: url(/img/model/purchase/wheel7.png);
+              }
+              .wheel8 {
+                background-image: url(/img/model/purchase/wheel8.png);
+              }
+            }
+            .inter-select {
+              .types {
+              }
+              .color-select {
                 display: flex;
-                flex-direction: column;
-                .black {
+                flex-wrap: wrap;
+                .interior {
                   width: 60px;
-                  height: 30px;
+                  height: 60px;
+                  margin: 5px;
+                  cursor: pointer;
+                  &:hover {
+                    box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.1);
+                  }
+                  i {
+                    margin: 0.3rem;
+                    color: $red;
+                    background-color: $white;
+                    border: 0.1px solid $white;
+                    border-radius: 50%;
+                  }
+                }
+                .interior1 {
                   background-color: $black;
                 }
-                .color-y {
-                  width: 60px;
-                  height: 30px;
-                  background-color: rgb(174, 139, 79);
+                .interior2 {
+                  background-color: $dark;
                 }
-              }
-              .interior4 {
-                display: flex;
-                flex-direction: column;
-                .black {
-                  width: 60px;
-                  height: 30px;
-                  background-color: $black;
+                .interior3 {
+                  display: flex;
+                  flex-direction: column;
+                  .black {
+                    width: 60px;
+                    height: 30px;
+                    background-color: $black;
+                  }
+                  .color-y {
+                    width: 60px;
+                    height: 30px;
+                    background-color: rgb(174, 139, 79);
+                  }
                 }
-                .color-r {
-                  width: 60px;
-                  height: 30px;
+                .interior4 {
+                  display: flex;
+                  flex-direction: column;
+                  .black {
+                    width: 60px;
+                    height: 30px;
+                    background-color: $black;
+                  }
+                  .color-r {
+                    width: 60px;
+                    height: 30px;
+                    background-color: rgb(68, 22, 27);
+                  }
+                }
+                .interior5 {
+                  display: flex;
+                  flex-direction: column;
+                  .black {
+                    width: 60px;
+                    height: 30px;
+                    background-color: $black;
+                  }
+                  .color-g {
+                    width: 60px;
+                    height: 30px;
+                    background-color: rgb(169, 168, 168);
+                  }
+                }
+                .interior6 {
+                  background-color: rgb(48, 57, 68);
+                }
+                .interior7 {
                   background-color: rgb(68, 22, 27);
                 }
               }
-              .interior5 {
-                display: flex;
-                flex-direction: column;
-                .black {
-                  width: 60px;
-                  height: 30px;
-                  background-color: $black;
-                }
-                .color-g {
-                  width: 60px;
-                  height: 30px;
-                  background-color: rgb(169, 168, 168);
-                }
-              }
-              .interior6 {
-                background-color: rgb(48, 57, 68);
-              }
-              .interior7 {
-                background-color: rgb(68, 22, 27);
-              }
             }
           }
         }
+        .active {
+          background-color: rgba($color: $dark, $alpha: 0.2);
+        }
+        .active:after {
+          content: "\2212";
+        }
+        .active:hover {
+          background-color: rgba($color: $dark, $alpha: 0.5);
+          font-weight: bold;
+        }
       }
-      .active {
-        background-color: rgba($color: $dark, $alpha: 0.2);
-      }
-      .active:after {
-        content: "\2212";
-      }
-      .active:hover {
-        background-color: rgba($color: $dark, $alpha: 0.5);
-        font-weight: bold;
-      }
-    }
-  }
-}
-.pur-btn {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  bottom: 3rem;
-  left: 65%;
+      .pur-btn {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-top: 2rem;
 
-  button {
-    width: 18vw;
-    height: 7vh;
-    border: none;
-    margin-bottom: 0.5rem;
-    background-color: rgba($color: $lightGray, $alpha: 0.5);
-    &:hover {
-      background-color: $red;
-      color: $white;
+        button {
+          width: 18vw;
+          height: 7vh;
+          border: none;
+          margin-bottom: 0.5rem;
+          background-color: rgba($color: $lightGray, $alpha: 0.5);
+          &:hover {
+            background-color: $red;
+            color: $white;
+          }
+        }
+      }
     }
   }
 }
