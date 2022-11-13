@@ -63,36 +63,39 @@
                   <div class="color-select">
                     <div class="types">Standard Colour</div>
                     <div class="color-boxes">
-                      <div class="color-1 box" title="white" onclick="bgImg(1)" id="c1"></div>
-                      <div class="color-2 box" title="black" onclick="bgImg(2)" id="c2"></div>
-                      <div class="color-3 box" title="guards red" onclick="bgImg(3)" id="c3"></div>
-                      <div class="color-4 box" title="racing yellow" onclick="bgImg(4)" id="c4"></div>
+                      <div class="color-1 box" title="white" onclick="bgImg(1, 'box')" id="c1">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      <div class="color-2 box" title="black" onclick="bgImg(2, 'box')" id="c2"></div>
+                      <div class="color-3 box" title="guards red" onclick="bgImg(3, 'box')" id="c3"></div>
+                      <div class="color-4 box" title="racing yellow" onclick="bgImg(4, 'box')" id="c4"></div>
                     </div>
-                    <div class="color-2 box" title="black" onclick="bgImg(2)"></div>
-                    <div class="color-3 box" title="guards red" onclick="bgImg(3)"></div>
-                    <div class="color-4 box" title="racing yellow" onclick="bgImg(4)"></div>
                   </div>
-
                   <div class="color-select">
                     <div class="types">Metallic Colour</div>
                     <div class="color-boxes">
-                      <div class="color-5 box" title="carrara white metallic" onclick="bgImg(5)" id="c5"></div>
-                      <div class="color-6 box" title="jet black metallic" onclick="bgImg(6)" id="c6"></div>
-                      <div class="color-7 box" title="agate grey metallic" onclick="bgImg(7)" id="c7"></div>
-                      <div class="color-8 box" title="GT silver metallic" onclick="bgImg(8)" id="c8"></div>
-                      <div class="color-9 box" title="gentian blue metallic" onclick="bgImg(9)" id="c9"></div>
-                      <div class="color-10 box" title="aventurine green metallic" onclick="bgImg(10)" id="c10"></div>
+                      <div class="color-5 box" title="carrara white metallic" onclick="bgImg(5, 'box')" id="c5"></div>
+                      <div class="color-6 box" title="jet black metallic" onclick="bgImg(6, 'box')" id="c6"></div>
+                      <div class="color-7 box" title="agate grey metallic" onclick="bgImg(7, 'box')" id="c7"></div>
+                      <div class="color-8 box" title="GT silver metallic" onclick="bgImg(8, 'box')" id="c8"></div>
+                      <div class="color-9 box" title="gentian blue metallic" onclick="bgImg(9, 'box')" id="c9"></div>
+                      <div
+                        class="color-10 box"
+                        title="aventurine green metallic"
+                        onclick="bgImg(10, 'box')"
+                        id="c10"
+                      ></div>
                     </div>
                   </div>
                   <div class="color-select">
                     <div class="types">Special Colour</div>
                     <div class="color-boxes">
-                      <div class="color-11 box" title="shark blue" onclick="bgImg(11)" id="c11"></div>
-                      <div class="color-12 box" title="arctic grey" onclick="bgImg(12)" id="c12"></div>
-                      <div class="color-13 box" title="carmine red" onclick="bgImg(13)" id="c13"></div>
-                      <div class="color-14 box" title="crayon" onclick="bgImg(14)" id="c14"></div>
-                      <div class="color-15 box" title="python green" onclick="bgImg(15)" id="c15"></div>
-                      <div class="color-16 box" title="ice grey metallic" onclick="bgImg(16)" id="c16"></div>
+                      <div class="color-11 box" title="shark blue" onclick="bgImg(11, 'box')" id="c11"></div>
+                      <div class="color-12 box" title="arctic grey" onclick="bgImg(12, 'box')" id="c12"></div>
+                      <div class="color-13 box" title="carmine red" onclick="bgImg(13, 'box')" id="c13"></div>
+                      <div class="color-14 box" title="crayon" onclick="bgImg(14, 'box')" id="c14"></div>
+                      <div class="color-15 box" title="python green" onclick="bgImg(15, 'box')" id="c15"></div>
+                      <div class="color-16 box" title="ice grey metallic" onclick="bgImg(16, 'box')" id="c16"></div>
                     </div>
                   </div>
                 </div>
@@ -104,14 +107,16 @@
               <div class="panel">
                 <div class="item_list">
                   <div class="wheel-select">
-                    <div class="wheel1 wheel" onclick="bgImg(17)" id="c17"></div>
-                    <div class="wheel2 wheel" onclick="bgImg(18)" id="c18"></div>
-                    <div class="wheel3 wheel" onclick="bgImg(19)" id="c19"></div>
-                    <div class="wheel4 wheel" onclick="bgImg(20)" id="c20"></div>
-                    <div class="wheel5 wheel" onclick="bgImg(21)" id="c21"></div>
-                    <div class="wheel6 wheel" onclick="bgImg(22)" id="c22"></div>
-                    <div class="wheel7 wheel" onclick="bgImg(23)" id="c23"></div>
-                    <div class="wheel8 wheel" onclick="bgImg(24)" id="c24"></div>
+                    <div class="wheel1 wheel" onclick="bgImg(17, 'wheel')" id="c17">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <div class="wheel2 wheel" onclick="bgImg(18, 'wheel')" id="c18"></div>
+                    <div class="wheel3 wheel" onclick="bgImg(19, 'wheel')" id="c19"></div>
+                    <div class="wheel4 wheel" onclick="bgImg(20, 'wheel')" id="c20"></div>
+                    <div class="wheel5 wheel" onclick="bgImg(21, 'wheel')" id="c21"></div>
+                    <div class="wheel6 wheel" onclick="bgImg(22, 'wheel')" id="c22"></div>
+                    <div class="wheel7 wheel" onclick="bgImg(23, 'wheel')" id="c23"></div>
+                    <div class="wheel8 wheel" onclick="bgImg(24, 'wheel')" id="c24"></div>
                   </div>
                 </div>
               </div>
@@ -123,24 +128,26 @@
                   <div class="inter-select">
                     <div class="types">Seats</div>
                     <div class="color-select">
-                      <div class="interior interior1" onclick="bgImg(25)" id="c25"></div>
-                      <div class="interior interior2" onclick="bgImg(26)" id="c26"></div>
+                      <div class="interior interior1" onclick="bgImg(25, 'interior')" id="c25">
+                        <i class="fa-solid fa-circle-check"></i>
+                      </div>
+                      <div class="interior interior2" onclick="bgImg(26, 'interior')" id="c26"></div>
                     </div>
                   </div>
                   <div class="inter-select">
                     <div class="types">Leather package</div>
                     <div class="color-select">
-                      <div class="interior interior1" onclick="bgImg(27)" id="c27"></div>
-                      <div class="interior interior2" onclick="bgImg(28)" id="c28"></div>
-                      <div class="interior interior3" onclick="bgImg(29)" id="c29">
+                      <div class="interior interior1" onclick="bgImg(27, 'interior')" id="c27"></div>
+                      <div class="interior interior2" onclick="bgImg(28, 'interior')" id="c28"></div>
+                      <div class="interior interior3" onclick="bgImg(29, 'interior')" id="c29">
                         <div class="black"></div>
                         <div class="color-y"></div>
                       </div>
-                      <div class="interior interior4" onclick="bgImg(30)" id="c30">
+                      <div class="interior interior4" onclick="bgImg(30, 'interior')" id="c30">
                         <div class="black"></div>
                         <div class="color-r"></div>
                       </div>
-                      <div class="interior interior5" onclick="bgImg(31)" id="c31">
+                      <div class="interior interior5" onclick="bgImg(31, 'interior')" id="c31">
                         <div class="black"></div>
                         <div class="color-g"></div>
                       </div>
@@ -149,19 +156,19 @@
                   <div class="inter-select">
                     <div class="types">Leather Interior / Leather Seats</div>
                     <div class="color-select">
-                      <div class="interior interior1" onclick="bgImg(32)" id="c32"></div>
-                      <div class="interior interior2" onclick="bgImg(33)" id="c33"></div>
-                      <div class="interior interior6" onclick="bgImg(34)" id="c34"></div>
-                      <div class="interior interior7" onclick="bgImg(35)" id="c35"></div>
-                      <div class="interior interior4" onclick="bgImg(36)" id="c36">
+                      <div class="interior interior1" onclick="bgImg(32, 'interior')" id="c32"></div>
+                      <div class="interior interior2" onclick="bgImg(33, 'interior')" id="c33"></div>
+                      <div class="interior interior6" onclick="bgImg(34, 'interior')" id="c34"></div>
+                      <div class="interior interior7" onclick="bgImg(35, 'interior')" id="c35"></div>
+                      <div class="interior interior4" onclick="bgImg(36, 'interior')" id="c36">
                         <div class="black"></div>
                         <div class="color-r"></div>
                       </div>
-                      <div class="interior interior3" onclick="bgImg(37)" id="c37">
+                      <div class="interior interior3" onclick="bgImg(37, 'interior')" id="c37">
                         <div class="black"></div>
                         <div class="color-y"></div>
                       </div>
-                      <div class="interior interior5" onclick="bgImg(38)" id="c38">
+                      <div class="interior interior5" onclick="bgImg(38, 'interior')" id="c38">
                         <div class="black"></div>
                         <div class="color-g"></div>
                       </div>
