@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <!-- js -->
   <script defer src="./js/login.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
   <title>PORSCHE 모델</title>
 </head>
 
@@ -55,12 +57,12 @@
         </div>
         <div class="in_img">
           <a href="/purchase.html">견적내기<i class="fa-solid fa-angle-right"></i></a>
-          <a href="#">시승신청<i class="fa-solid fa-angle-right"></i></a>
+          <a href="/center.html">시승신청<i class="fa-solid fa-angle-right"></i></a>
         </div>
       </div>
       <div class="body_text">
         <div class="text_1">
-          <div class="inner_text">
+          <div class="inner_text" data-aos="zoom-in" data-aos-once="false" data-aos-duration="2000">
             <h2>Concept</h2>
             <div>스포츠카의 핵심을 유지하며<br />미드쉽 엔진을 탑재한 로스스터</div>
             <div class="text_imp">
@@ -72,7 +74,7 @@
         </div>
         <div class="text_2">
           <div class="inner_img2"></div>
-          <div class="inner_text2">
+          <div class="inner_text2" data-aos="fade-left" data-aos-once="false" data-aos-duration="2000">
             <h2>Design</h2>
             <div>정교하며, 과하지 않습니다. 자신감 넘치며, 구속받지 않습니다. 낮고, 와이드하며, 매끈합니다.</div>
             <div class="text_imp">스포티하면서도 독특한 엣지<br />뚜렷하게 정의된 전통적 윤곽</div>
@@ -83,7 +85,7 @@
                 <source src="/video/model/more/videoplayback.mp4" type="video/mp4">
               </video>
             </div>
-            <div class="inner_text3">
+            <div class="inner_text3" data-aos="flip-left" data-aos-once="false" data-aos-duration="2000">
               <h2>Performance</h2>
               <div>718 모델의 특별함<br />성능, 핸들링, 디자인, 넓은 적재 공간<br><i class="fa-solid fa-ellipsis-vertical"></i></div>
               <div class="text_imp">무엇보다 특별한 것은<br />이 모든 것을 가능하게 해준<br />미드십 엔진 컨셉트</div>
@@ -164,5 +166,7 @@
     </div>
   </footer>
 </body>
-
+<script>
+  AOS.init();
+</script>
 </html>
