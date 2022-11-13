@@ -777,13 +777,14 @@ body {
   }
 }
 
-// @keyframes fade-up {
-//   0% {
-//     transform: translateY(50px);
-//     opacity: 0;
-//   }
-//   100% {
-//     transform: translateY(0);
-//     opacity: 1;
-//   }
-// }
+.moveTopBtn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: #15577e;
+  color: white;
+  line-height: 4rem;
+  text-align: center;
+}
