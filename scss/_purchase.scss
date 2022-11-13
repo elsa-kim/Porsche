@@ -15,11 +15,17 @@ $gray: #494e51;
     margin-top: 1rem;
     position: relative;
     z-index: 9;
+
     a {
       color: $dark;
       font-weight: 600;
       font-size: larger;
       cursor: pointer;
+      z-index: 10;
+      &:hover {
+        font-weight: 800;
+      }
+
       i {
         margin-left: 0.5rem;
       }
@@ -31,17 +37,18 @@ $gray: #494e51;
   justify-content: space-between;
   align-items: center;
   .img_box {
-    width: 60vw;
+    flex: 5;
     height: 60vh;
     box-shadow: 0 0 2px $darkGray;
-    margin: 0 1rem;
     background-image: url(/img/model/purchase/color-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    transition: 0.2s;
   }
   .option {
-    margin: 10rem 0.5rem 4rem;
+    flex: 3;
+    margin: 8rem 1rem 4rem;
     width: 40vw;
     height: 80vh;
     .select {
@@ -300,8 +307,10 @@ $gray: #494e51;
     height: 7vh;
     border: none;
     margin-bottom: 0.5rem;
+    background-color: rgba($color: $lightGray, $alpha: 0.5);
     &:hover {
       background-color: $red;
+      color: $white;
     }
   }
 }

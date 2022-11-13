@@ -24,8 +24,10 @@ function bgImg(n) {
 
   check.classList.add("fa-solid");
   check.classList.add("fa-circle-check");
-  //   document.getElementsByClassName(box).empty();
   let view = document.getElementById(`c${n}`);
+  let noview = document.getElementsByClassName("box")[0];
+  if (noview.length != 0) {
+    noview.removeChild();
+  }
   view.appendChild(check);
-  not(`${view}`).removeChild(check);
 }
