@@ -789,6 +789,7 @@ body {
   text-align: center;
   opacity: 0;
   border-radius: 50%;
+  transition: 0.2s;
   &.on {
     opacity: 1;
   }
